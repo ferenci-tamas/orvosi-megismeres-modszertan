@@ -1,0 +1,2 @@
+# FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese
+Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése) jegyzet.
