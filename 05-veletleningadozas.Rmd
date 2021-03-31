@@ -46,7 +46,7 @@ Tehát: bár azt nem mondhatjuk, hogy biztosan egyenlőtlen a fiú-lány arány,
 
 (Arbuthnot megfigyelése egyébként mai szemmel nézve is helytálló. A legfrissebb adatok szerint fogantatáskor valóban igen pontosan 50-50% a fiú-lány arány, az Arbuthnot által is leírt eltérés valódi oka az, hogy a lánymagzatok méhen belüli vesztesége némileg magasabb, ezért van végeredményben születéskor fiútöbbség; Magyarországon jelenleg 100 lányra kb. 106 fiú jut születéskor. Ez a világon nem teljesen egységes, ennek sajnos sejthetőleg nem csak biológiai okai vannak, hanem a szelektív abortusz is belejátszik, például Kínában ugyanez az arány 100:115 feletti, de vannak tartományok, ahol elképesztő módon a 100:130-at is meghaladja ez az arány.)
 
-## A mágikus $p$-érték
+## A mágikus *p*-érték
 
 Egyetlen kérdést kell már csak tisztáznunk. Mi van akkor, ha Arbuthnot azt tapasztalta volna, hogy a 82 évből 81 évben van fiútöbbség? A logikánk az volt, hogy feltéve, hogy nincs nemi különbség, mekkora valószínűséggel jön ki az, ami ténylegesen ki is jött. Ez jelen esetben azt jelenti, hogy ha szabályos a pénzérme, akkor mekkora annak a valószínűsége, hogy a 82-ből 81-szer fejet dobunk. Ennek kiszámolása nem túl nehéz: annak a valószínűsége, hogy elsőre írást dobunk és utána csupa fejet, pontosan ugyanannyi, mint hogy csupa fejet dobunk, $\frac{1}{2^{82}}$. Igen ám, de akkor is megvalósul a 82-ből 81, ha másodiknak dobunk írást (még plusz $\frac{1}{2^{82}}$ valószínűség), ha harmadikra, ha negyedikre, és így tovább, egész addig, hogy 82. dobásra jön ki az írás. Egy szó mint száz, annak a valószínűsége, hogy 81 fejet dobunk és 1 írást, $82 \cdot \frac{1}{2^{82}}$.
 
