@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="hu-HU" xml:lang="hu-HU">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3. fejezet A confounding megoldásai – megfigyelés és kísérlet | Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)</title>
+  <meta name="description" content="Mind érdeklődőknek, mind orvosoknak hasznos összefoglaló, mely közérthetően bemutatja az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3. fejezet A confounding megoldásai – megfigyelés és kísérlet | Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://tamas-ferenci.github.io/FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese/" />
+  
+  <meta property="og:description" content="Mind érdeklődőknek, mind orvosoknak hasznos összefoglaló, mely közérthetően bemutatja az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni." />
+  <meta name="github-repo" content="tamas-ferenci/FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3. fejezet A confounding megoldásai – megfigyelés és kísérlet | Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)" />
+  
+  <meta name="twitter:description" content="Mind érdeklődőknek, mind orvosoknak hasznos összefoglaló, mely közérthetően bemutatja az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni." />
+  
+
+<meta name="author" content="Ferenci Tamás, tamas.ferenci@medstat.hu" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"/>
+<link rel="next" href="megfigyeléses-vizsgálatok-a-gyakorlatban.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19799395-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-19799395-2');
+</script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Ferenci Tamás: Az orvosi megismerés<br>módszertana</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Előszó</a></li>
+<li class="chapter" data-level="1" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html"><i class="fa fa-check"></i><b>1</b> Bevezető gondolatok, és pár történeti szempont</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html#az-érvágás-esete-avagy-hogyan-lehet-valamit-2000-éven-át-rosszul-csinálni-úgy-hogy-senkinek-nem-tűnik-fel"><i class="fa fa-check"></i><b>1.1</b> Az érvágás esete, avagy hogyan lehet valamit 2000 éven át rosszul csinálni úgy, hogy senkinek nem tűnik fel</a></li>
+<li class="chapter" data-level="1.2" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html#empirikus-megismerés-az-orvostörténetben"><i class="fa fa-check"></i><b>1.2</b> Empirikus megismerés az orvostörténetben</a></li>
+<li class="chapter" data-level="1.3" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html#vita-egy-állásponttal"><i class="fa fa-check"></i><b>1.3</b> Vita egy állásponttal</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><i class="fa fa-check"></i><b>2</b> Az empirikus megismerés alapgondolata és a confounding</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html#az-okozatiság-nyomában"><i class="fa fa-check"></i><b>2.1</b> Az okozatiság nyomában</a></li>
+<li class="chapter" data-level="2.2" data-path="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html#a-confounding-problémája"><i class="fa fa-check"></i><b>2.2</b> A confounding problémája</a></li>
+<li class="chapter" data-level="2.3" data-path="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html#zavaró-változóktól-a-megzavart-olvasókig"><i class="fa fa-check"></i><b>2.3</b> Zavaró változóktól a megzavart olvasókig</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><i class="fa fa-check"></i><b>3</b> A confounding megoldásai – megfigyelés és kísérlet</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html#egy-aranyérmes-megoldás"><i class="fa fa-check"></i><b>3.1</b> Egy aranyérmes megoldás</a></li>
+<li class="chapter" data-level="3.2" data-path="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html#megfigyelés-és-kísérlet"><i class="fa fa-check"></i><b>3.2</b> Megfigyelés és kísérlet</a></li>
+<li class="chapter" data-level="3.3" data-path="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html#a-jó-a-rossz-és-a-közepesnél-némileg-gyengébben-jó"><i class="fa fa-check"></i><b>3.3</b> A jó, a rossz, és a közepesnél némileg gyengébben jó</a></li>
+<li class="chapter" data-level="3.4" data-path="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html#jót-tesz-e-repülőgépből-való-kiesésnél-ha-van-nálunk-ejtőernyő"><i class="fa fa-check"></i><b>3.4</b> Jót tesz-e repülőgépből való kiesésnél, ha van nálunk ejtőernyő?</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="megfigyeléses-vizsgálatok-a-gyakorlatban.html"><a href="megfigyeléses-vizsgálatok-a-gyakorlatban.html"><i class="fa fa-check"></i><b>4</b> Megfigyeléses vizsgálatok a gyakorlatban</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="megfigyeléses-vizsgálatok-a-gyakorlatban.html"><a href="megfigyeléses-vizsgálatok-a-gyakorlatban.html#a-rétegzés"><i class="fa fa-check"></i><b>4.1</b> A rétegzés</a></li>
+<li class="chapter" data-level="4.2" data-path="megfigyeléses-vizsgálatok-a-gyakorlatban.html"><a href="megfigyeléses-vizsgálatok-a-gyakorlatban.html#a-standardizálás"><i class="fa fa-check"></i><b>4.2</b> A standardizálás</a></li>
+<li class="chapter" data-level="4.3" data-path="megfigyeléses-vizsgálatok-a-gyakorlatban.html"><a href="megfigyeléses-vizsgálatok-a-gyakorlatban.html#kitérő-arról-hogy-miért-jó-ha-egy-országban-sokan-halnak-meg-rákban"><i class="fa fa-check"></i><b>4.3</b> Kitérő arról, hogy miért jó, ha egy országban sokan halnak meg rákban</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><i class="fa fa-check"></i><b>5</b> A véletlen szerepe az orvosi vizsgálatok kiértékelésében</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#a-véletlen-ingadozás-átka"><i class="fa fa-check"></i><b>5.1</b> A véletlen ingadozás átka</a></li>
+<li class="chapter" data-level="5.2" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#isten-létének-bizonyítása-a-statisztika-eszközeivel"><i class="fa fa-check"></i><b>5.2</b> Isten létének bizonyítása a statisztika eszközeivel</a></li>
+<li class="chapter" data-level="5.3" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#a-mágikus-p-érték"><i class="fa fa-check"></i><b>5.3</b> A mágikus <span class="math inline">\(p\)</span>-érték</a></li>
+<li class="chapter" data-level="5.4" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#döntéshozatal-véletlen-jelenlétében"><i class="fa fa-check"></i><b>5.4</b> Döntéshozatal véletlen jelenlétében</a></li>
+<li class="chapter" data-level="5.5" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#az-egyik-legfontosabb-félreértés"><i class="fa fa-check"></i><b>5.5</b> Az egyik legfontosabb félreértés</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#terroristák-a-városban"><i class="fa fa-check"></i><b>5.5.1</b> Terroristák a városban</a></li>
+<li class="chapter" data-level="5.5.2" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#kis-kitérő-na-de-mi-köze-ennek-az-orvosláshoz"><i class="fa fa-check"></i><b>5.5.2</b> Kis kitérő: na de mi köze ennek az orvosláshoz?</a></li>
+<li class="chapter" data-level="5.5.3" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#nagy-kitérő-dr.-gépbayes-rendel"><i class="fa fa-check"></i><b>5.5.3</b> Nagy kitérő: Dr. GépBayes rendel</a></li>
+<li class="chapter" data-level="5.5.4" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#na-de-mi-köze-ennek-a-véletlen-ingadozás-kezeléséhez"><i class="fa fa-check"></i><b>5.5.4</b> Na de mi köze ennek a véletlen ingadozás kezeléséhez?</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#a-véletlenség-megszelídítése"><i class="fa fa-check"></i><b>5.6</b> A véletlenség megszelídítése</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#megoldási-lehetőségek-nyomásban"><i class="fa fa-check"></i><b>5.6.1</b> Megoldási lehetőségek nyomásban</a></li>
+<li class="chapter" data-level="5.6.2" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#az-orvosi-kutatások-edzeni-mennek"><i class="fa fa-check"></i><b>5.6.2</b> Az orvosi kutatások edzeni mennek</a></li>
+<li class="chapter" data-level="5.6.3" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#kutatások-mintaméretének-tervezése"><i class="fa fa-check"></i><b>5.6.3</b> Kutatások mintaméretének tervezése</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html"><i class="fa fa-check"></i><b>6</b> Végpont és lemérése</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#mikor-adjunk-gyógyszert"><i class="fa fa-check"></i><b>6.1</b> Mikor adjunk gyógyszert?</a></li>
+<li class="chapter" data-level="6.2" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#kísérletek-résztvevői-avagy-végre-kiderül-hogy-jót-tesz-e-repülőgépből-kiesésnél-ha-van-nálunk-ejtőernyő"><i class="fa fa-check"></i><b>6.2</b> Kísérletek résztvevői, avagy végre kiderül, hogy jót tesz-e repülőgépből kiesésnél, ha van nálunk ejtőernyő</a></li>
+<li class="chapter" data-level="6.3" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#mutatók-stabilitása"><i class="fa fa-check"></i><b>6.3</b> Mutatók stabilitása</a></li>
+<li class="chapter" data-level="6.4" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#döntéshozatal-és-az-abszolút-és-relatív-mutatók"><i class="fa fa-check"></i><b>6.4</b> Döntéshozatal és az abszolút és relatív mutatók</a></li>
+<li class="chapter" data-level="6.5" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#különböző-kimenetek-közös-nevezőre-hozása"><i class="fa fa-check"></i><b>6.5</b> Különböző kimenetek közös nevezőre hozása</a></li>
+<li class="chapter" data-level="6.6" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#kitérő-patikamérlegen-az-emberélet"><i class="fa fa-check"></i><b>6.6</b> Kitérő: patikamérlegen az emberélet</a></li>
+<li class="chapter" data-level="6.7" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#végpontok-megválasztásának-problémái"><i class="fa fa-check"></i><b>6.7</b> Végpontok megválasztásának problémái</a></li>
+<li class="chapter" data-level="6.8" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#több-végpont-egyidejű-vizsgálata"><i class="fa fa-check"></i><b>6.8</b> Több végpont egyidejű vizsgálata</a>
+<ul>
+<li class="chapter" data-level="6.8.1" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#vadászni-mentünk-szignifikanciára"><i class="fa fa-check"></i><b>6.8.1</b> Vadászni mentünk… szignifikanciára</a></li>
+<li class="chapter" data-level="6.8.2" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#egy-nem-csak-biostatisztikai-tanulságokkal-bíró-kitérő"><i class="fa fa-check"></i><b>6.8.2</b> Egy nem csak biostatisztikai tanulságokkal bíró kitérő</a></li>
+<li class="chapter" data-level="6.8.3" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#a-jóhiszemű-kutatók-nehézségei"><i class="fa fa-check"></i><b>6.8.3</b> A jóhiszemű kutatók nehézségei</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="http://www.medstat.hu/" target="blank">http://www.medstat.hu/</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="a-confounding-megoldásai-megfigyelés-és-kísérlet" class="section level1" number="3">
+<h1><span class="header-section-number">3. fejezet</span> A confounding megoldásai – megfigyelés és kísérlet</h1>
+<p>Láttuk, hogy miért jó ötlet szisztematikus empirikus módszerekkel megvizsgálni például azt a kérdést, hogy a légszennyezettség okoz-e mentális betegségeket: begyűjtünk tényadatokat a légszennyezettségről és a mentális megbetegedésekről, mégpedig szisztematikusan, majd ezeket elemezzük. Azt is láttuk, hogy mindeközben óvatosan kell eljárnunk: az, hogy a szennyezettebb területeken több a megbetegedés, még egyáltalán nem jelenti azt, hogy bizonyosan a szennyezés a ludas. De a legfontosabb kérdésre még mindig nem válaszoltunk: most akkor végül is mit tegyünk?</p>
+<p>Idézzük fel az empirikus vizsgálatok tételmondatát: egy vizsgált tényező akkor van okozati összefüggésben a végponttal, ha a kizárólag abban a tényezőben eltérő csoportok eltérnek a végpontban, mégpedig olyan mértékben, ami már nem tudható be a véletlen ingadozásnak. Azt is láttuk, hogy az egyik legalapvetőbb csapda a „csak” szóban van elrejtve: a naiv vizsgálati módszerek, például amikor összehasonlítjuk a szennyezettebb és a kevésbé szennyezett területeken a mentális betegségek előfordulását, nem garantálják, hogy az összehasonlított csoportok <em>csak</em> a csoportképzés szempontjában, jelen esetben a légszennyezettségben fognak eltérni. Mi van, ha a szennyezettebb területen élők kevésbé tehetősek, így kevésbé egészségesen táplálkoznak, kevésbé vesznek részt a szülés előtti gondozásban és így tovább. Innentől kezdve, ha találunk is különbséget a mentális betegségek előfordulásában, nem tudhatjuk, hogy az mitől van: a vizsgált különbség (légszennyezettség) miatt, a vizsgált különbséggel <em>automatikusan</em> együttjáró egyéb eltérések (táplálkozás, szülés előtti gondozás stb.) miatt, vagy ezek valamilyen keveréke miatt…? Ez volt a confounding problémája.</p>
+<div id="egy-aranyérmes-megoldás" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Egy aranyérmes megoldás</h2>
+<p>Mit tudunk tenni? <em>Törekedni</em> sokféleképp lehet arra, hogy a csoportok csak a vizsgált tényezőben térjenek el, de <em>biztosan</em> elérni csak egyféleképp. Tulajdonképpen az a meglepő, hogy a megoldás milyen későn merült fel. 1931-ben a michigan-i William H. Maybury Tüdőszanatórium orvosa, James Burns Amberson (<a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html#fig:amberson">3.1</a>. ábra) ki akarta deríteni, mégpedig empirikusan, hogy egy sanocrysin nevű szervetlen aranyvegyület vajon gyógyítja-e a TBC-t (elég sok írás született ennek lehetőségéről akkoriban). Az – <em>ugyebár!</em> – nem jó megoldás, hogy összehasonlítjuk a gyógyszert kapó és gyógyszert nem kapó betegek gyógyulását, hiszen mi van, ha ők másban is eltérnek a gyógyszerben részesülés tényén túl? Mi van, ha a gyógyszert inkább kapták a fiatalok (vagy pont, hogy az idősek), inkább kapták a férfiak vagy a nők, inkább kapták a több vagy kevesebb társbetegséggel rendelkezők stb. Ez jelen esetben a legkevésbé sem elméleti spekuláció, nagyon is könnyen lehet, hogy egy új, még nem jól ismert kezelést inkább a jobb állapotú és így egyúttal legjobb gyógyhajlamú betegeknek írnak fel inkább az orvosok. Tehát a gyógyszert kapó és nem kapó csoportok ilyen összehasonlítása teljesen félrevezető lehet – belefutottunk a confounding problémájába.</p>
+<div class="figure" style="text-align: center"><span id="fig:amberson"></span>
+<img src="abrak/AzOrvosiMegismeresModszertana_3_Abra1.jpg" alt="James Burns Amberson (1890-1979)." width="50%" />
+<p class="caption">
+Ábra 3.1: James Burns Amberson (1890-1979).
+</p>
+</div>
+<p>Amberson és munkatársai egy huszárvágással megoldották a problémát: pénzfeldobással döntötték el, hogy ki kapjon sanocrysin-t! És ezt most nem irodalmi fordulatként mondom, hanem a szó szoros értelmében: Amberson <em>konkrétan</em> feldobott egy pénzérmét és az alapján adott sanocrysin-t vagy egyszerű desztillált vizet a betegeknek, hogy fejet vagy írást kapott, ezt pontosan dokumentálta is a cikkében. Még arról is gondoskodott, hogy a két szer külsőleg ne legyen megkülönböztethető, és, hogy a dobás eredményéről ne tudjon a beteg, csak két orvos és a beadó nővér. (Cikksorozatunk későbbi részeiben erre majd azt fogjuk mondani: egyszeresen vak, placebo-kontrollált kutatást hajtott végre.)</p>
+<p>És ennyi. Ezzel, a történelemben először, megoldódott a confounding problémája. Majd látni fogjuk, hogy az ismert confounderek kiszűrésére lesz módunk: ha eszünkbe jut, hogy a gyógyszert inkább fiatalabbak, vagy inkább férfiak kapják, és ezért feljegyezzük nem csak gyógyszerben részesülés tényét, hanem azt is, hogy az alany milyen idős és mi a neme, akkor ezeket – mint zavaró tényezőket – ki fogjuk tudni szűrni. De ennek minimális feltétele, hogy eszünkbe jusson, hogy mik a confounderek, <em>és</em> le is tudjuk őket mérni (egy olyannál, mint a „szocioökonómiai státusz” ez utóbbi sem nyilvánvaló). Amberson megoldásában, amit az orvosi irodalomban <em>randomizációnak</em> szokás nevezni, az a zseniális, hogy <em>minden</em> confoundert kiszűr, azokat is, amiket nem tudunk feljegyezni, sőt, azokat is, amik eszünkbe sem jutnak! Tegyük fel például, hogy kiderül, hogy a kékszeműeknek az orvosok inkább adnak sanocrysin-t <em>és</em> a kék szem egyúttal növeli a TBC-ből való gyógyhajlamot. Ez csúnyán tönkretenné az összes vizsgálatot, hiszen ki gondolna arra, hogy a szemszínt is fel kell jegyezni, de vegyük észre, hogy – mert ez a lényeg – Amberson módszere <em>még ekkor is működik</em>! Hiszen a pénzfeldobás révén a kékszeműek arányában <em>sem</em> lesz szisztematikus különbség a két csoport között! Ugyanúgy, mint ahogy nem lesz szisztematikus különbség a nemi összetételben, az életkori összetételben, és egyáltalán: <em>semmilyen</em> szempontban sem! Úgy is mondhatjuk, hogy a randomizáció kiszűri, ráadásul <em>automatikusan</em> kiszűri mind a végtelen számú potenciális confoundert – azokat is, amiket nem tudtunk feljegyezni, sőt, azokat is, amikről <em>eszünkbe sem jut</em>, hogy confounderek! Ez a randomizált kutatások hihetetlen nagy előnye.</p>
+<p>(Ez a kiszűrés természetesen nem azt jelenti, hogy biztosan minden szempont tökéletesen kiegyensúlyozott lesz a csoportok között. A pénzfeldobás szeszélye folytán <em>előfordulhat</em>, hogy puszta véletlenségből több kékszemű lesz az egyik csoportban, de be lehet látni, hogy mivel ez csak a véletlen szeszélye folytán állt elő, így nem befolyásolja a fenti állításokat.)</p>
+</div>
+<div id="megfigyelés-és-kísérlet" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Megfigyelés és kísérlet</h2>
+<p>Amberson módszerének egy roppant fontos jellemzője van: befolyásolnunk kell hozzá, hogy ki kap gyógyszert (expozíciót). Azokat az orvosi vizsgálatokat, ahol a kutatók aktívan befolyásolják az expozíciót, <em>kísérletes vizsgálatnak</em>, azokat, ahol csak passzívan feljegyzik, hogy mi történt, de nem befolyásolják azt, <em>megfigyeléses vizsgálatnak</em> szokás nevezni.</p>
+<p>Mint korábban is láttuk, a kísérletek története messzire nyúlik vissza. Kísérlet volt az is, amit James Lind végrehajtott a skorbut gyógyításának vizsgálatára – csak épp nem randomizált kísérlet. Az ilyenek problémája az, hogy mindig ott van a lehetőség, hogy az orvos, akár teljesen tudattalanul is, de célirányosan befolyásolja, hogy ki melyik csoportba kerül; például erősen hisz abban, hogy a citrusfélék jót tesznek, ezért, lehet, hogy egyáltalán nem tudatosan, de a legenyhébb eseteket rakja a citrusfélékkel kezelt csoportba (vagy pont fordítva). Ezt már a XIX. század végére felismerték, ezért akkorra divatba jöttek az úgynevezett „váltakozó besorolású” kutatások, ami azt jelentette, hogy minden második beteg kapta meg a vizsgált gyógyszert, minden második nem. Ez már egészen közel van a randomizált vizsgálatokhoz (az csak nem befolyásolja a gyógyulásomat, hogy páratlan sorszámú beteg voltam-e aznap a kórházban!), de valójában még itt is jelentkezhet az előbbi probléma: sokszor leírták például, hogy az orvosoknak megesett a szíve egy betegen, ezért igyekeztek úgy rendezni az ellátást, hogy a kezelt csoportba kerülhessen. Ez nyilvánvalóan elrontotta a dolgot, ha mondjuk a legrosszabb állapotú betegeknél került erre a leggyakrabban sor. Éppen ezért a váltakozó besorolás helyét a XX. század közepe felé átvette a randomizált besorolás, különösen, hogy a híres statisztikus Ronald Fisher ennek az elméletét is kidolgozta (egyébként már Amberson orvosi alkalmazása előtt).</p>
+<p>Látható tehát, hogy a kísérletes vizsgálatok hihetetlenül nagy és roppant fontos előnye, hogy elvileg mentesek tudnak lenni a confoundingtól. (Gyakorlatilag persze nem feltétlenül: kísérletet is lehet rosszul csinálni – erről később még sok szó lesz.) A megfigyeléses vizsgálatoknál viszont, bármennyire is óvatosan járunk el, mindig a fejünk fölött fog Damoklész kardjaként lebegni a confounding: biztos, hogy minden tényező, amiben az összehasonlított csoportok eltérnek – az összehasonlítás tárgyán kívül – eszünkbe jutott? Biztos, hogy mindegyiket le tudjuk mérni? Biztos, hogy mindegyiket jól ki tudjuk szűrni?</p>
+<p>Mindezeket látva adja magát a kérdés: akkor miért nem csinálunk mindig kísérletet?</p>
+<p>Erre a kérdésre vannak nyilvánvaló és kevésbé nyilvánvaló válaszok. A legnyilvánvalóbb, hogy bizonyos helyzetekben egyszerűen lehetetlen: valószínűleg apróbb nehézségeink támadnának a kutatásetikai bizottság előtt egy olyan kutatási tervvel, amelyben szülőnőket randomizáltan akarunk „császármetszetni” – függetlenül attól, hogy szükségük van-e rá – azért, hogy kiderítsük, hogy a császármetszés okoz-e cukorbetegséget (pedig, módszertani szempontból ez lenne a legjobb!). Hasonlóan nehéz embereket randomizáltan légszennyezett és kevésbé légszennyezett területen „lakatni”, csak hogy visszatérjünk az eredeti példánkra. Ilyen esetekben mindenképp maradnak a megfigyeléses vizsgálatok, azok minden bajával együtt is.</p>
+<p>Az érdekes az, hogy néha akkor is csinálunk megfigyeléses vizsgálatot, ha lehetne kísérletet is (vagy akár ténylegesen végeztek is kísérlet). Ez is mutatja, hogy a kísérleteknek más hátrányaik is vannak, túl azon, hogy drágák, idő- és szervezésigényesek.</p>
+<p>Az egyik probléma, hogy a kísérletekben, épp az említett szervezésigény miatt, korlátozott a bevonható betegek köre. A néhány ezer fős kísérlet a legtöbb területen már nagynak számít, a néhány tízezer fő pedig már nagyon nagynak, egy ennél is nagyobb kísérletet pedig csak extrém nehezen lehet megszervezni. (Ebből adódóan nagyon kevés ilyenre van példa. Az utóbbi idők legnagyobb orvosi kísérlete, melyben minden egyes alany egyénileg randomizálásra került, a CAPITA kutatás volt, melyben azt vizsgálták, hogy egy pneumococcus elleni oltás tényleg csökkenti-e a pneumococcus okozta tüdőgyulladások előfordulását 65 év felett. Elképesztő számú alanyt, 85 ezer főt vontak be, ehhez két év és 101 központ kellett, megszámlálhatatlan közreműködővel; sejthetőleg százmillió dolláros nagyságrendbe került ez az egyetlen kísérlet.) Hogy ez miért fontos? Azért, mert a nem elegendően nagy mintanagyság korlátozza, hogy milyen nagyságú hatást tudunk észrevenni, legyen szó akár kívánt hatásról, akár mellékhatásról, ha például egy gyógyszerről beszélünk. Ha kicsi a mintanagyság, akkor egy kis javulást, vagy egy ritkán jelentkező mellékhatást nincs sok esélyünk észrevenni. Pontosan az előbbi a magyarázat a CAPITA esetére is: a pneumococcus okozta tüdőgyulladás nem fordul elő sűrűn, így az oltás, legyen bármilyen hatásos is, „darabra” csak kevéssel tudja csökkenteni a tüdőgyulladások számát. És csakugyan: még a 85 ezer alany is csak arra volt elég, hogy összesen kevesebb, mint 200 – a vizsgálat szempontjából fontos típusú – tüdőgyulladás előforduljon. De ugyanez a helyzet a mellékhatások terén is: ha egy mellékhatás csak minden 10 ezredik embert érinti, akkor minden matematikai indoklás nélkül is érezhető, hogy egy 5 ezer fős kutatásban esélyünk sem lesz észrevenni (pedig ez egyáltalán nem kis kísérlet!). Megfigyeléses vizsgálatokkal ezzel szemben összehasonlíthatatlanul könnyebben elérhető ilyen, vagy akár ennél is nagyobb mintanagyság. Gondoljunk arra, hogy a megfigyeléses vizsgálat sok esetben úgy néz ki, hogy adatbázisokból kérdezünk le alanyainkra vonatkozó információkat – itt a kutatás tehát nem azt jelenti, hogy <em>fizikailag</em> alanyokat kell kezelnünk, hanem azt, hogy a számítógép előtt ücsörögve lekérdezéseket kell írogatnunk. A kettő bonyolultságát egy napon nem lehet említeni…! Én magam is – harmincéves adjunktusként, 2 kutatótársammal – részt vettem olyan vizsgálatban, melyben néhány hónap alatt, és nulla finanszírozással, 400 ezer magyar beteg adatait dolgoztuk fel – a CAPITA esetében kutatók és segéderők ezreire és évekre volt szükség, meg mellesleg annyi pénzre, mint a Semmelweis Egyetem éves költségvetése, hogy 85 ezer alanyt össze tudjanak szedni…</p>
+<p>A másik, előbbihez hasonló gyökerű probléma a kísérletekkel, hogy abban is korlátozottak, hogy mennyi ideig lehetséges az alanyok utánkövetése. A gyakorlatban néhány hónap vagy legfeljebb néhány év érhető el (de az alanyok kihullása a vizsgálatból – nem megy el a következő vizitre, mert elfelejti, elköltözik, elveszti az érdeklődését stb. – már ekkor is általában igen nagy probléma). Ennél hosszabb kísérlet lényegében kivitelezhetetlen, vagy csak a legelemibb adatok (például: életben van-e egyáltalán még az alany) gyűjthetőek be. Világos, hogy ez miért gond: amíg a kevés alany azt limitálja, hogy milyen nagyságú hatást tudunk észrevenni, addig a rövid utánkövetés azt korlátozza be, hogy mennyi idő alatt kialakuló hatást – legyen az akár kívánt hatás, akár mellékhatás – tudunk észrevenni. Szinte esélytelen, példának okáért, kísérlettel eldönteni, hogy egy gyerekkori táplálkozási szokás vagy orvosi beavatkozás okozhat-e egy tipikusan időskorban, vagy akár felnőttkorban jelentkező betegséget. De itt is elmondható: megfigyeléses vizsgálatokkal nem feltétlenül reménytelen a helyzet, hiszen adatbázisokból sokszor akár több évtizedes átfogású adatok is könnyen kigyűjthetőek.</p>
+<p>A harmadik lehetséges probléma a kísérletekkel, hogy a kísérletben részt vevő alanyok – még a legjóhiszeműbb tervezés esetén is – szükségképp egy elég speciális, „steril” populációt jelentenek, már pusztán abból is adódóan, hogy hogyan verbuválják ezeket az alanyokat. Ez mindig felveti azt a kérdést, hogy találjunk bármit is a kísérlet alanyai körében, az vajon mennyire vonatkoztatható az <em>összes</em> alanyra…? Megfigyeléses vizsgálatoknál ez a probléma sokkal kevésbé jelentkezik: gyakran akár az összes alany is bevonható a vizsgálatba, így aztán egész biztos nincs probléma az összes alanyra vonatkoztatással. E kérdésre később még visszatérünk.</p>
+</div>
+<div id="a-jó-a-rossz-és-a-közepesnél-némileg-gyengébben-jó" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> A jó, a rossz, és a közepesnél némileg gyengébben jó</h2>
+<p>Összességében véve tehát a legfontosabb megállapítás, hogy nem lehet olyat mondani, hogy a kísérlet és a megfigyelés közül az egyik „jó”, a másik meg „rossz”. Mindkettőnek jellemző előnyei és hátrányai vannak, így az, hogy melyik a szerencsés választás, mindig a konkrét kérdéstől függ: van ahol az egyik, van ahol a másik, a kérdés az, hogy az adott problémának mik a jellemzői. Az előbbi pontban mondottakat szem előtt tartva nagy vonalakban már mi is tudunk választani!</p>
+<p>A „nincs jó meg rossz” a fentinél általánosabban is igaz. Minden kutatásnak vannak hibaforrásai. Egy ilyet már láttunk is, a confoundingot, a későbbiekben még többet meg fogunk ismerni. Bizonyos kutatásokban több hibaforrás van, vagy komolyabb súlyúak vannak, másokban kevesebb. Van egy szó, amit nagyon szeretek erre: a <em>bizonyítóerő</em>. Kifejezi, hogy a tanulmányok – ilyen értelemben vett – értéke nem bináris, mint azt néhányan hajlamosak gondolni: nagyon ritkán van olyan, hogy egy kutatás „tökéletes” (és így ami abban olvasható, az úgy van és pont) vagy, hogy „teljesen hasznavehetetlen” (ezért bármi is olvasható benne, semmit nem jelent). A valóságban ez egy folytonos skála: arról, hogy a szennyezettebb területeken több mentálisan beteg gyermek él sem mondható, hogy semmit sem jelent (a confounding miatt) – csak épp borzasztóan alacsony a bizonyítóereje (arra nézve, hogy a légszennyezettség mentális betegséget okoz).</p>
+</div>
+<div id="jót-tesz-e-repülőgépből-való-kiesésnél-ha-van-nálunk-ejtőernyő" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Jót tesz-e repülőgépből való kiesésnél, ha van nálunk ejtőernyő?</h2>
+<p>Valójában tehát nincs éles határvonal kísérletes és megfigyeléses bizonyíték között; minden kutatást a saját erényei és korlátai alapján kell értékelni. Ezt legékesebben az bizonyítja, hogy a különböző bizonyítékok „egy ligában játszanak”, már olyan értelemben, hogy lehet, hogy az általánosságban gyengébbnek tekintett bizonyítékok – például megfigyeléses vizsgálatok – képesek lehetnek kiváltani a kísérletes bizonyítékokat. Kipróbálta-e bárki, hogy vakbélgyulladásban a vakbélműtét hatásos beavatkozás a semmittevéshez képest? Meglepődnék… Pedig borzasztó egyszerű volna! Csak fogni kellene 200 vakbélgyulladásos beteget, véletlenszerűen 100-at megműteni, és megvárni, amíg 99 gyógyultan hazamegy (nem 100-at mondtam, mert legyen a műtétnek is valamicske kockázata), 100-zal nem csinálni semmit, és megvárni, amíg 99 is az intenzív osztályra kerül perforált vakbéllel (nem 100-at mondtam, mert azért spontán is lehessen meggyógyulni), és voila, meg is van az igen magas bizonyítóerejű bizonyítékunk a vakbélműtét hatásosságára! Egész érthetetlen módon nem tudok róla, hogy ezt bárki megcsinálta volna… Vagy mondjuk kipróbálta-e bárki randomizált kísérletben, hogy ha nagy magasságban kiesünk egy repülőgépből, akkor jót tesz-e, ha van nálunk ejtőernyő?</p>
+<p>Bocsánat, ez utóbbi kérdésre lehet pontos választ adni: Smith és szerzőtársa 2003-as cikkükben – a neves orvosi folyóirat, a British Medical Journal karácsonyi különszámában jelent meg – nagyon alapos irodalomkutatást végeztek a témában. Pontosan definiálták az expozíciót (ejtőernyővel rendelkezés szabadesés esetén) és a végpontot (halál, vagy komoly trauma – a traumatológiában általánosan használatos ISS sérüléssúlyossági pontszám 15-nél nagyobb – fellépése a földbecsapódáskor), rendkívül átfogó, több adatbázisra kiterjedő, pontosan dokumentált irodalomkeresést végeztek, majd arra a megdöbbentő eredményre jutottak, hogy elképesztő módon egyetlen egy vizsgálat sem volt, melyben embereket repülőgépből dobáltak volna ki, randomizáltan ellátva őket ejtőernyővel és vizsgálva a végpontot! Azaz, mondják a szerzők – nyilván a kísérletek mindenekfeletti mivoltát hirdetőkön gúnyolódva – igazából nem tudhatjuk, hogy jót tesz-e, ha van nálunk ejtőernyő, ha kiesünk egy repülőgépből…</p>
+<p>A másik dolog, amit mindig észben kell tartani: ha el kell döntenünk egy kérdést, akkor – természetesen – az <em>összes</em> rendelkezésre álló bizonyítékot fel kell használnunk. A második kifejezés, amit nagyon szeretek: <em>a „bizonyítékok összessége” szemlélet</em>. Nem lehet kiragadni egy konkrét kutatást, különösen, ha rengeteg készült a számunkra érdekes kérdés vizsgálatára. Márpedig egy sor ilyen témakör van; ezekben az esetekben az, hogy <em>egy konkrét</em> kutatás mit talált, nem sokat jelent. Szoktam mondani, hogy számos kérdés esetében, ha kapok öt percet és egy számítógépet internetkapcsolattal, akkor <em>legalább egy</em> kutatást minden állításra <em>és</em> az ellenkezőjére is találok… El kell tehát felejteni az olyan szalagcímeket, hogy „A legújabb kutatás bizonyította, hogy” – nem az az érdekes, hogy a legújabb mit bizonyított, hanem az, hogy összességében mit bizonyítanak a kutatások! Hasonlóan félrevezetések alapjai lehetnek az olyan mondatok – noha elsőre nagyon tudományosnak látszódnak! – miszerint „ez tehát ilyen hatást okoz [Doe, 2016]” (különösen laikusok megtévesztésére alkalmas ez, akik hajlamosak azt gondolni, hogy mivel ez egy ilyen komolyan kinéző, tudományos hivatkozással ellátott állítás, akkor így kell legyen – ha egyszer itt az alátámasztó kutatás…!) Valójában azonban ez nem sokat jelent, még ha Doe tényleg ezt is találta, azonban 20 másik kutatás meg az ellenkezőjét.</p>
+<p>Láttuk tehát, hogy ha a kérdésünk vizsgálatára tudunk kísérletet végezni (azaz tudjuk aktívan befolyásolni az expozíciót), akkor jó helyzetben vagyunk, mert tudunk randomizálni, és innentől elég egyenes az út: a csoportok közti különbség ez esetben tényleg biztosan a vizsgált expozíciónak – és ezen felül legfeljebb a véletlen ingadozásnak, amit később meg fogunk beszélni – tudható be. Néha azonban ez nem célszerű, vagy lehetetlen – mint épp a légszennyezéses példánkban is. Erről eddig annyit mondtunk, hogy ez esetben, ha eszünkbe jut, hogy mik a confounderek, és le tudjuk őket mérni, akkor valamilyen módon ki lehet szűrni a hatásukat – hiába megfigyelésesek az adataink. De mégis hogyan? Mi ez a „valamilyen mód”…?</p>
+
+</div>
+</div>
+<!-- Default Statcounter code for Ferenci Tamás
+elektronikus jegy https://tamas-ferenci.github.io/ -->
+<script type="text/javascript">
+var sc_project=12422840; 
+var sc_invisible=1; 
+var sc_security="d32cce24"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="látogató
+számláló" href="https://www.statcounter.hu/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12422840/0/d32cce24/1/"
+alt="látogató számláló"></a></div></noscript>
+<!-- End of Statcounter Code -->
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="megfigyeléses-vizsgálatok-a-gyakorlatban.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/tamas-ferenci/FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese/edit/master/03-megfigyeleseskiserlet.Rmd",
+"text": "Szerkesztés"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese.pdf", "FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

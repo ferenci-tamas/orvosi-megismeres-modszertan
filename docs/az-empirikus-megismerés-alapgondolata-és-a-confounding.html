@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="hu-HU" xml:lang="hu-HU">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2. fejezet Az empirikus megismerés alapgondolata és a confounding | Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)</title>
+  <meta name="description" content="Mind érdeklődőknek, mind orvosoknak hasznos összefoglaló, mely közérthetően bemutatja az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2. fejezet Az empirikus megismerés alapgondolata és a confounding | Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://tamas-ferenci.github.io/FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese/" />
+  
+  <meta property="og:description" content="Mind érdeklődőknek, mind orvosoknak hasznos összefoglaló, mely közérthetően bemutatja az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni." />
+  <meta name="github-repo" content="tamas-ferenci/FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2. fejezet Az empirikus megismerés alapgondolata és a confounding | Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)" />
+  
+  <meta name="twitter:description" content="Mind érdeklődőknek, mind orvosoknak hasznos összefoglaló, mely közérthetően bemutatja az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni." />
+  
+
+<meta name="author" content="Ferenci Tamás, tamas.ferenci@medstat.hu" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="bevezet-gondolatok-és-pár-történeti-szempont.html"/>
+<link rel="next" href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19799395-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-19799395-2');
+</script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Ferenci Tamás: Az orvosi megismerés<br>módszertana</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Előszó</a></li>
+<li class="chapter" data-level="1" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html"><i class="fa fa-check"></i><b>1</b> Bevezető gondolatok, és pár történeti szempont</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html#az-érvágás-esete-avagy-hogyan-lehet-valamit-2000-éven-át-rosszul-csinálni-úgy-hogy-senkinek-nem-tűnik-fel"><i class="fa fa-check"></i><b>1.1</b> Az érvágás esete, avagy hogyan lehet valamit 2000 éven át rosszul csinálni úgy, hogy senkinek nem tűnik fel</a></li>
+<li class="chapter" data-level="1.2" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html#empirikus-megismerés-az-orvostörténetben"><i class="fa fa-check"></i><b>1.2</b> Empirikus megismerés az orvostörténetben</a></li>
+<li class="chapter" data-level="1.3" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html#vita-egy-állásponttal"><i class="fa fa-check"></i><b>1.3</b> Vita egy állásponttal</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><i class="fa fa-check"></i><b>2</b> Az empirikus megismerés alapgondolata és a confounding</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html#az-okozatiság-nyomában"><i class="fa fa-check"></i><b>2.1</b> Az okozatiság nyomában</a></li>
+<li class="chapter" data-level="2.2" data-path="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html#a-confounding-problémája"><i class="fa fa-check"></i><b>2.2</b> A confounding problémája</a></li>
+<li class="chapter" data-level="2.3" data-path="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html#zavaró-változóktól-a-megzavart-olvasókig"><i class="fa fa-check"></i><b>2.3</b> Zavaró változóktól a megzavart olvasókig</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><i class="fa fa-check"></i><b>3</b> A confounding megoldásai – megfigyelés és kísérlet</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html#egy-aranyérmes-megoldás"><i class="fa fa-check"></i><b>3.1</b> Egy aranyérmes megoldás</a></li>
+<li class="chapter" data-level="3.2" data-path="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html#megfigyelés-és-kísérlet"><i class="fa fa-check"></i><b>3.2</b> Megfigyelés és kísérlet</a></li>
+<li class="chapter" data-level="3.3" data-path="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html#a-jó-a-rossz-és-a-közepesnél-némileg-gyengébben-jó"><i class="fa fa-check"></i><b>3.3</b> A jó, a rossz, és a közepesnél némileg gyengébben jó</a></li>
+<li class="chapter" data-level="3.4" data-path="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html#jót-tesz-e-repülőgépből-való-kiesésnél-ha-van-nálunk-ejtőernyő"><i class="fa fa-check"></i><b>3.4</b> Jót tesz-e repülőgépből való kiesésnél, ha van nálunk ejtőernyő?</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="megfigyeléses-vizsgálatok-a-gyakorlatban.html"><a href="megfigyeléses-vizsgálatok-a-gyakorlatban.html"><i class="fa fa-check"></i><b>4</b> Megfigyeléses vizsgálatok a gyakorlatban</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="megfigyeléses-vizsgálatok-a-gyakorlatban.html"><a href="megfigyeléses-vizsgálatok-a-gyakorlatban.html#a-rétegzés"><i class="fa fa-check"></i><b>4.1</b> A rétegzés</a></li>
+<li class="chapter" data-level="4.2" data-path="megfigyeléses-vizsgálatok-a-gyakorlatban.html"><a href="megfigyeléses-vizsgálatok-a-gyakorlatban.html#a-standardizálás"><i class="fa fa-check"></i><b>4.2</b> A standardizálás</a></li>
+<li class="chapter" data-level="4.3" data-path="megfigyeléses-vizsgálatok-a-gyakorlatban.html"><a href="megfigyeléses-vizsgálatok-a-gyakorlatban.html#kitérő-arról-hogy-miért-jó-ha-egy-országban-sokan-halnak-meg-rákban"><i class="fa fa-check"></i><b>4.3</b> Kitérő arról, hogy miért jó, ha egy országban sokan halnak meg rákban</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><i class="fa fa-check"></i><b>5</b> A véletlen szerepe az orvosi vizsgálatok kiértékelésében</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#a-véletlen-ingadozás-átka"><i class="fa fa-check"></i><b>5.1</b> A véletlen ingadozás átka</a></li>
+<li class="chapter" data-level="5.2" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#isten-létének-bizonyítása-a-statisztika-eszközeivel"><i class="fa fa-check"></i><b>5.2</b> Isten létének bizonyítása a statisztika eszközeivel</a></li>
+<li class="chapter" data-level="5.3" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#a-mágikus-p-érték"><i class="fa fa-check"></i><b>5.3</b> A mágikus <span class="math inline">\(p\)</span>-érték</a></li>
+<li class="chapter" data-level="5.4" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#döntéshozatal-véletlen-jelenlétében"><i class="fa fa-check"></i><b>5.4</b> Döntéshozatal véletlen jelenlétében</a></li>
+<li class="chapter" data-level="5.5" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#az-egyik-legfontosabb-félreértés"><i class="fa fa-check"></i><b>5.5</b> Az egyik legfontosabb félreértés</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#terroristák-a-városban"><i class="fa fa-check"></i><b>5.5.1</b> Terroristák a városban</a></li>
+<li class="chapter" data-level="5.5.2" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#kis-kitérő-na-de-mi-köze-ennek-az-orvosláshoz"><i class="fa fa-check"></i><b>5.5.2</b> Kis kitérő: na de mi köze ennek az orvosláshoz?</a></li>
+<li class="chapter" data-level="5.5.3" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#nagy-kitérő-dr.-gépbayes-rendel"><i class="fa fa-check"></i><b>5.5.3</b> Nagy kitérő: Dr. GépBayes rendel</a></li>
+<li class="chapter" data-level="5.5.4" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#na-de-mi-köze-ennek-a-véletlen-ingadozás-kezeléséhez"><i class="fa fa-check"></i><b>5.5.4</b> Na de mi köze ennek a véletlen ingadozás kezeléséhez?</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#a-véletlenség-megszelídítése"><i class="fa fa-check"></i><b>5.6</b> A véletlenség megszelídítése</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#megoldási-lehetőségek-nyomásban"><i class="fa fa-check"></i><b>5.6.1</b> Megoldási lehetőségek nyomásban</a></li>
+<li class="chapter" data-level="5.6.2" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#az-orvosi-kutatások-edzeni-mennek"><i class="fa fa-check"></i><b>5.6.2</b> Az orvosi kutatások edzeni mennek</a></li>
+<li class="chapter" data-level="5.6.3" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#kutatások-mintaméretének-tervezése"><i class="fa fa-check"></i><b>5.6.3</b> Kutatások mintaméretének tervezése</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html"><i class="fa fa-check"></i><b>6</b> Végpont és lemérése</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#mikor-adjunk-gyógyszert"><i class="fa fa-check"></i><b>6.1</b> Mikor adjunk gyógyszert?</a></li>
+<li class="chapter" data-level="6.2" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#kísérletek-résztvevői-avagy-végre-kiderül-hogy-jót-tesz-e-repülőgépből-kiesésnél-ha-van-nálunk-ejtőernyő"><i class="fa fa-check"></i><b>6.2</b> Kísérletek résztvevői, avagy végre kiderül, hogy jót tesz-e repülőgépből kiesésnél, ha van nálunk ejtőernyő</a></li>
+<li class="chapter" data-level="6.3" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#mutatók-stabilitása"><i class="fa fa-check"></i><b>6.3</b> Mutatók stabilitása</a></li>
+<li class="chapter" data-level="6.4" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#döntéshozatal-és-az-abszolút-és-relatív-mutatók"><i class="fa fa-check"></i><b>6.4</b> Döntéshozatal és az abszolút és relatív mutatók</a></li>
+<li class="chapter" data-level="6.5" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#különböző-kimenetek-közös-nevezőre-hozása"><i class="fa fa-check"></i><b>6.5</b> Különböző kimenetek közös nevezőre hozása</a></li>
+<li class="chapter" data-level="6.6" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#kitérő-patikamérlegen-az-emberélet"><i class="fa fa-check"></i><b>6.6</b> Kitérő: patikamérlegen az emberélet</a></li>
+<li class="chapter" data-level="6.7" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#végpontok-megválasztásának-problémái"><i class="fa fa-check"></i><b>6.7</b> Végpontok megválasztásának problémái</a></li>
+<li class="chapter" data-level="6.8" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#több-végpont-egyidejű-vizsgálata"><i class="fa fa-check"></i><b>6.8</b> Több végpont egyidejű vizsgálata</a>
+<ul>
+<li class="chapter" data-level="6.8.1" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#vadászni-mentünk-szignifikanciára"><i class="fa fa-check"></i><b>6.8.1</b> Vadászni mentünk… szignifikanciára</a></li>
+<li class="chapter" data-level="6.8.2" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#egy-nem-csak-biostatisztikai-tanulságokkal-bíró-kitérő"><i class="fa fa-check"></i><b>6.8.2</b> Egy nem csak biostatisztikai tanulságokkal bíró kitérő</a></li>
+<li class="chapter" data-level="6.8.3" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#a-jóhiszemű-kutatók-nehézségei"><i class="fa fa-check"></i><b>6.8.3</b> A jóhiszemű kutatók nehézségei</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="http://www.medstat.hu/" target="blank">http://www.medstat.hu/</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="az-empirikus-megismerés-alapgondolata-és-a-confounding" class="section level1" number="2">
+<h1><span class="header-section-number">2. fejezet</span> Az empirikus megismerés alapgondolata és a confounding</h1>
+<p>Láttuk, hogy milyen veszélyeket rejthet magában, ha nem empirikusan, azaz tapasztalati úton vizsgálunk egy orvosi kérdést. Nem véletlen, hogy az utóbbi évtizedekben egyre jobban előtérbe kerültek a szisztematikus, empirikus vizsgálatok – csakhogy ezek értelmezése szintén számos csapdát tartogat! Úgyhogy térjünk vissza a kiindulóponthoz, az említett cikkhez: okoz-e mentális betegséget a légszennyezettség?</p>
+<p>Első ránézésre könnyű dolgunk van: empirikusan dolgozunk ugyebár, ezért begyűjtünk tényadatokat gyermekek lakóhelyének légszennyezettségéről, és esetleges későbbi megbetegedéseikről. Szisztematikusan dolgozunk, ezért a mintavételt alkalmas terv szerint végezzük, például a népességnyilvántartó adataiból teljesen véletlenszerűen választunk ki kellően sok gyermeket. (Tehát véletlenül sem internetes kérdőívet küldünk ki, többek között a „Megbetegítették a gyermekemet a légszennyezettséggel!!!” Facebook-csoport tagjainak, megkérve, hogy idézzenek fel az összefüggést megerősítő illetve cáfoló példákat.)</p>
+<p>A kapott eredmények, a példa kedvéért: a 100 ezer nem légszennyezett helyen élő gyermek közül 1310-nél lépett fel mentális betegség, a 100 ezer légszennyezett környezetben felnövő közül azonban 3750-ben. A különbség drámai. Márpedig szisztematikusan dolgoztunk, a lehető legjobban: véletlenszerűen választott adatokkal, empirikusan vizsgáltuk a kérdést, ráadásul igen nagy mintán, úgyhogy hátradőlhetünk és nagy nyugalommal mondhatjuk: a légszennyezettség mentális betegséget okoz!</p>
+<p>Vagy mégsem?</p>
+<div id="az-okozatiság-nyomában" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Az okozatiság nyomában</h2>
+<p>A válaszhoz induljunk egy picit távolabbról. Érdemes felidézni, hogy milyen szerteágazóak azok a – fentihez hasonló – kérdések, melyekre választ szeretnénk adni az orvostudományban: Okoz-e agyrákot a mobiltelefon használata? A vörös hús fogyasztása vastagbélrákot? A császármetszéssel születés megnöveli-e annak kockázatát, hogy a gyermeknek később 1-es típusú cukorbetegsége lesz? És lehet-e a gyermek autista attól, hogy az anya paracetamolt szed a terhesség alatt? Itt van ez az új vérnyomáscsökkentő gyógyszerjelölt, vajon tényleg csökkenti-e a vérnyomást? Okozhat-e alvászavart mellékhatásként?</p>
+<p>Ebben a listában igyekeztem, teljesen szándékosan, a lehető legkülönbözőbb kérdéseket összegyűjteni, melyekben látszólag egyetlen közös pont sincs. Ezt azért tettem, hogy még meglepőbb legyen a következő kijelentésem: azt állítom ugyanis, hogy bármennyire is különbözőnek tűnnek, valójában kivétel nélkül az összes felsorolt kérdés mögött – és milliónyi egyéb orvosi, egészségügyi kérdés mögött – pontosan ugyanaz a séma van! Persze, a konkrét részletek nagyon eltérnek, de ha ezektől megtisztítjuk az egyes kérdéseket, akkor a mélyben minden esetben ugyanazt találjuk.</p>
+<p>Az egyik komponens: minden kérdésben található valami, amit teljesen általános szóval <em>expozíciónak</em> fogunk hívni. Ez szó szerint „kitettséget” jelent, és tényleg azt is értjük alatta, hogy az alany ki volt téve valamilyen hatásnak. Ezt a legáltalánosabban értjük: a hatás lehet valami, amit szándékosan alkalmazunk az alanyon (pl. gyógyszert adunk neki), lehet valami, amit maga választ (pl. vörös húst fogyaszt), és olyasvalami is, aminek akaratán kívül van kitéve (pl. császármetszéssel született). Érdemes végignézni az összes előbbi példát, csakugyan mindegyikben azonosítható az expozíció, a mobiltelefon-használattól egészen a gyógyszerszedésig.</p>
+<p>A másik komponens: minden kérdésben található valamiféle eredmény, kimenet – ezt fogjuk <em>végpontnak</em> hívni. Ez lesz az orvosilag lényeges, általunk vizsgált történés; ismét csak, érdemes egy pillanatra visszanézni az előbbi listára, és mindegyik elemnél megkeresni ezt, az agyráktól az alvászavarig.</p>
+<p>Ezzel megvan a séma két „oldala”, expozíció egyfelől, végpont másfelől, már csak egyetlen komponens hiányzik, amit vizsgálni akarunk minden ilyen és ezekhez hasonló kérdésben: az, hogy az expozíció és a végpont között van-e ok-okozati összefüggés. Szép szóval ezt hívhatjuk <em>kauzalitásnak</em>. Bármennyire is különbözőnek tűnnek a kérdések, e séma mindegyikre illeszkedik, mindegyikben azonosítható az expozíció, azonosítható a végpont, és mindegyikre igaz, hogy okozatiságot kutatunk.</p>
+<p>De mit is jelent ez a fogalom? Kézenfekvő értelmezés, hogy megnézzük, hogy hány beteg volt a légszennyezéses csoportban, megnézzük, hogy hány lett <em>volna</em> köztük, ha minden más változatlan lett volna, <em>de</em> nem lett volna légszennyezés – és a kettő különbség a légszennyezés hatása. Sajnos ezt a másodikat soha nem ismerhetjük, hiszen ez egy valójában létre nem jött, képzeletbeli helyzet. Éppen ezért jobb híján a nem légszennyezéses csoporthoz viszonyítunk, tehát nem <em>ugyanazon</em> csoport tényleges és képzeletbeli helyzetét vizsgáljuk, hanem két <em>különböző</em> csoport tényleges helyzetét viszonyítjuk <em>egymáshoz</em>. Lényegében azt mondjuk, hogy a nem légszennyezett környezetben felnövő gyermekek adatai mutatják, hogy mi lett <em>volna</em>, ha a légszennyezett környezetben felnövőknél nem lett volna légszennyezés.</p>
+<p>Csakhogy ez egy nagyon erős feltevés: kizárólag akkor igaz, ha a két csoport semmi másban nem tér el, egyedül a légszennyezettség tényében.</p>
+<p>A tételmondatot mindenesetre megfogalmazhatjuk: Az expozíció akkor van okozati összefüggésben a végponttal, ha a csak az expozícióban eltérő csoportok eltérnek a végpontban, mégpedig olyan mértékben, ami már nem tudható be a véletlen ingadozásnak.</p>
+<p>(Az utolsó tagmondat magyarázatára később még vissza fogok térni. Egyelőre gondoljunk arra, hogy ha nem 100 ezer gyermek vett volna részt a kutatásban csak 100, és mondjuk azt találjuk, hogy az egyik csoportban 2, a másikban 3 beteg gyermek van, akkor sokkal óvatosabban mondanánk, hogy különbséget találtunk – noha elvileg itt is másfélszeres az eltérés.)</p>
+</div>
+<div id="a-confounding-problémája" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> A confounding problémája</h2>
+<p>Ebben a tételmondatban tehát van egyetlen egy szó, ami iszonyatos bonyodalmakat okoz: az, hogy „csak”. Biztos, hogy az összehasonlított csoportjaink kizárólag csak az összehasonlítás tárgyában, tehát az expozícióban térnek el? Biztos, hogy a légszennyezett területen felnövő és az egészséges levegőben felnövő gyermekek között <em>csak és kizárólag</em> az a különbség, hogy milyen a levegőminőség a lakhelyükön…?</p>
+<p>Dehogy! A nagyobb légszennyezettségű területek nagyon gyakran épp a városok peremkerületeit jelentik, az ipari negyedeket, az elavult fűtésű, leszakadt részeket. Itt azonban tendenciájában inkább rossz körülmények között élő, kevésbé tehetős családba született (egyszóval: rosszabb szocioökonómiai helyzetű) gyermekek fognak lakni. Igen ám, de a rosszabb szocioökonomiai helyzet egy sor betegség magasabb kockázatát hordozza – mi van, ha a mentális betegségek is ezek közé tartoznak? Mert a rosszabb szocioökonómiai szegmensben a várandósok kevésbé férnek hozzá a szülés előtti gondozáshoz, közülük több dohányzik vagy fogyaszt alkoholt a várandósság alatt. A gyermekekre sem csak a rosszabb levegő hat, hanem a rosszabb táplálkozás, hogy kevésbé vesznek részt szűréseken és így tovább, és így tovább.</p>
+<p>Innentől kezdve, ha találunk is különbséget a mentális megbetegedések előfordulásában a két csoport között, <em>nem tudhatjuk</em>, hogy az minek a következménye: az általunk vizsgált levegőminőségbeli eltérésnek, az ezzel – <em>óhatatlanul!</em> – <em>együttjáró</em> egyéb eltéréseknek, vagy esetleg ezek keverékének?! Ezt nem tudhatjuk – hiszen az összehasonlított csoportok nem <em>csak</em> az összehasonlítás szempontjában tértek el.</p>
+<p>A problémát tehát az jelenti, hogy a két változó kapcsolatát <em>megzavarja</em> egy harmadik változó, mely egyszerre hat az expozícióra <em>és</em> a végpontra, ahogy az <a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html#fig:confoundingsema">2.1</a>. ábra is mutatja. Ennek következtében elképzelhető, hogy a légszennyezettségnek valójában <em>nincs is a világon semmilyen</em> hatása a mentális betegségekre, amit látunk, az egy <em>látszólagos</em> hatás, annak következtében, hogy a légszennyezett területen felnövő gyermekek körében egész egyszerűen több a rossz szocioökonomiai helyzetű, ami pedig a <em>valódi</em> oka a több mentális betegségnek!</p>
+<div class="figure" style="text-align: center"><span id="fig:confoundingsema"></span>
+<img src="abrak/AzOrvosiMegismeresModszertana_2_Abra1A.png" alt="Bal oldal: Naiv megközelítés, jobb oldal: valós helyzet." width="40%" /><img src="abrak/AzOrvosiMegismeresModszertana_2_Abra1B.png" alt="Bal oldal: Naiv megközelítés, jobb oldal: valós helyzet." width="40%" />
+<p class="caption">
+Ábra 2.1: Bal oldal: Naiv megközelítés, jobb oldal: valós helyzet.
+</p>
+</div>
+<p>Ha valaki nem hiszi el, hogy ilyen létezhet, akkor nézze meg képzeletbeli adatgyűjtésünk részletesebb eredményeit, melyet a következő táblázat mutat:</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="left">Légszennyezett</th>
+<th align="left">Nem légszennyezett</th>
+<th align="left">Összesen</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rossz szocioökonómiai helyzet</td>
+<td align="left">6% (3300/55000)</td>
+<td align="left">6% (375/6250)</td>
+<td align="left">6% (3675/61250)</td>
+</tr>
+<tr class="even">
+<td>Jó szocioökonómiai helyzet</td>
+<td align="left">1% (450/45000)</td>
+<td align="left">1% (935/93750)</td>
+<td align="left">1% (1385/138750)</td>
+</tr>
+<tr class="odd">
+<td>Összesen</td>
+<td align="left">3,8% (3750/100000)</td>
+<td align="left">1,3% (1310/100000)</td>
+<td align="left">2,5% (5060/200000)</td>
+</tr>
+</tbody>
+</table>
+<p>Ebben a táblázatban valami első ránézésre egészen paradox dolog látható. (Azért írtam oda nem csak a százalékokat, de a számokat is, mert néhányan azt szokták mondani, hogy ez matematikailag is lehetetlen. Erről szó nincs, ha valaki nem hiszi, adja össze és ossza el a feltüntetett számokat!) Mert mit látunk? Azt, hogy a rossz szocioökonómiai helyzetű gyermekek körében <em>nincs</em> hatása a légszennyezésnek (így is, úgy is 6% az előfordulása), a jó szocioökonómiai helyzetű gyermekek körében <em>szintén nincs</em> hatása (1% így is, úgy is) – összességében viszont <em>mégis</em> van! Hiszen az 1,3% megnőtt 3,8%-ra, ahogy azt a felvezetőben is írt számok mutatják. Ez meg hogy a csudában lehet? – kérdezhetné valaki. Se egyik csoportban nincs hatása, se a másikban, de összességében mégis van?!</p>
+<p>Rakjuk most össze, hogy mi is történt itt. A problémát az okozta, hogy volt egy változónk, mely <em>egyszerre</em> tudott két dolgot: <em>egyrészt</em> összefüggött az expozícióval (nézzük meg, a jó szocioökonómiai helyzetűeknek csak harmada élt légszennyezett területen, a rosszaknak majdnem 90%-a), <em>másrészt</em> befolyásolta a végpontot a légszennyezettségtől <em>függetlenül</em>, <em>önmagában</em> is (az 1%-os előfordulást 6%-ra emelte). Az ilyen változókat szokás zavaró változónak, vagy – magyarul is gyakrabban használt angol kifejezéssel – confoundernek nevezni; a jelenségnek magának pedig <em>confounding</em> a neve. (Ez egy nagyon találó angol kifejezés, amire sajnos nem honosodott meg hasonlóan frappáns magyar elnevezés. A „confounding” ugyanis szó szerint azt jelenti, hogy „egybemosódás”: a probléma valóban az, hogy az általunk vizsgált eltérés <em>egybe van mosódva</em> egy vagy több egyéb eltéréssel.)</p>
+<p>Ez az oka annak, hogy a naiv módszer („több-e a mentálisan beteg a magasabb légszennyezettségű területeken?”) csábító mivolta ellenére is <em>teljesen fals</em>! Hiába is dolgoztunk empirikusan, és hiába is gyűjtöttünk szisztematikusan adatokat.</p>
+<p>Fontos felhívni rá a figyelmet, hogy a „teljesen fals” természetesen nem azt jelenti, hogy az eredményünk akkor valójában azt jelenti, hogy nem okoz mentális betegséget a légszennyezettség – természetesen okozhat, csak ez <em>nem következik</em> abból, hogy több a mentálisan beteg a szennyezettebb levegőjű területeken! <em>Önmagában</em> ez az együttjárás <em>nagyon kevéssé bizonyítja</em> az okozati összefüggést. Azt mondhatjuk, hogy nagyobb légszennyezettség <em>együtt jár</em> a több mentális betegséggel, de hogy a nagyobb légszennyezettség <em>okoz-e</em> több mentális betegséget, az egy sokkal-sokkal fogósabb kérdés, aminek kapcsán, mint a fentiek is mutatják, roppant óvatosan kell eljárni.</p>
+<p>Ez az ilyen jellegű adatok értékelésének egyik legnagyobb problémája (mely a laikus sajtóban is lépten-nyomon visszaköszön). A valóságban ráadásul messze nem olyan egyszerű a helyzet, mint a fenti táblázatban, ahol van egy szem confounderünk. A valós helyzetek általában ennél sokkal-sokkal kuszábbak.</p>
+<p>Ennek illusztrálására vegyünk egy másik példát a cikk elejének listájáról: a császármetszéssel születés megnöveli-e az 1-es típusú cukorbetegség kockázatát? A császármetszéssel születők között több az 1-es típusú cukorbeteg, de – most már tudjuk – ez nem sokat jelent, hiszen mi van, ha vannak egyéb eltérések is a csoportok között? Ez csakugyan így van: a <a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html#fig:t1dmsema">2.2</a>. ábra mutatja, immár egy valós orvosi példán, a legfontosabb confoundereket ebben az esetben. Még itt se mondhatjuk persze, hogy ez az összes, de ez már valóságközelibb.</p>
+<div class="figure" style="text-align: center"><span id="fig:t1dmsema"></span>
+<img src="abrak/AzOrvosiMegismeresModszertana_2_Abra2.png" alt="Okoz-e 1-es típusú cukorbetegséget (T1DM) a császármetszés? Potenciális confounderek és hatásaik." width="90%" />
+<p class="caption">
+Ábra 2.2: Okoz-e 1-es típusú cukorbetegséget (T1DM) a császármetszés? Potenciális confounderek és hatásaik.
+</p>
+</div>
+<p>Példának okáért, az anyai diabetes és a császármetszés közötti nyílon pozitív jel van, mert a cukorbeteg anyáknak általában nagyobbak a magzataik, és ez a különféle téraránytalanságok miatt gyakrabban vezet császármetszéshez. Másrészt a cukorbetegségnek van egy erős genetikai komponense, így az anyai cukorbetegségből a gyermekéhez is pozitív nyíl vezet. És már ennyi is elég, hogy bajban legyünk: innentől kezdve, még ha azt is találjuk, hogy a császármetszéssel születettek körében több lesz később cukorbeteg (egyébként tényleg ez a helyzet), akkor sem tudhatjuk, hogy mi a valódi ok: csakugyan a császármetszés, vagy egyszerűen csak az, hogy a császármetszéssel születőknek gyakrabban cukorbeteg az édesanyja? És ez még csak az első confounder volt!</p>
+<p>Érdemes megnézni a másodikat, az anyatejes táplálást is. Ez rámutat arra, hogy az expozíció és a confounder között nem érdekes, hogy milyen az okozati kapcsolat iránya (az eddigi példákkal szemben itt most aligha arról van szó, hogy az anyatejes táplálás befolyásolja, hogy korábban császármetszés történt-e…), csak az fontos, hogy kapcsolat van. És csakugyan, a császármetszéssel szülő nők ritkábban táplálják anyatejjel a gyermeküket, ez így van a valóságban, és most az mindegy is, hogy ennek mi az oka. Másrészt az anyatejes táplálás – számos egyéb előnye mellett – csökkenti a cukorbetegség kockázatát is – és akkor e ponton megint meg vagyunk lőve… és még közel nem vagyunk a sor végén.</p>
+</div>
+<div id="zavaró-változóktól-a-megzavart-olvasókig" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Zavaró változóktól a megzavart olvasókig</h2>
+<p>Nem véletlenül írtam korábban, hogy a naiv módszer nagyon „csábító” tud lenni. Képzeljük csak el, pláne némi marketinggel meghintve: látványos grafikon, rajta a nem légszennyezett területen felnövők körében a kockázat (kicsi oszlop), mellett a légszennyezett területek adata (oszlop kiüti az oldal tetejét), szomorú anyuka megrázó beszámolója mentálisan beteg gyermekéről, természetesen hangsúlyozva a levegőminőséget stb. stb. Vajon 100 emberből hánnyal hitetné el a légszennyezettség szerepét…? (És hányan mondanák azt, hogy „hohó, de hát itt óvatosnak kell lenni, mert a szocioökonómiai státuszon keresztül megvalósuló confounding van!”…?)</p>
+<p>Ha jobban megnézzük, mindennapi egészségügyi megállapításainkat lépten-nyomon átszövi ez a probléma. Nézzük meg kedvenc internetes portálunk egészségügyi rovatát is…</p>
+<p>„A több zöldséget fogyasztók 10 évvel tovább élnek!” Biztos, hogy a több zöldséget fogyasztók csak a zöldségfogyasztás mértékében térnek el a kevesebb zöldséget fogyasztóktól? Fogadjuk el, hogy igaz az állítás, és tényleg együtt jár a több zöldségfogyasztás a hosszabb élettartammal. Akkor végül is igaz ez a mondat, minek rajta kötözködni? – kérdezhetné valaki. Szó nincs erről, ez nem akadékoskodás, éppen ellenkezőleg, ez a legfontosabb kérdés. A mondat nyilván azt akarja sugallani, hogy együnk több zöldséget, hogy tovább éljünk. De ha valójában az előző nem okozati kapcsolat, csak együttjárás, akkor – mivel a valódi ok más volt – ezzel <em>nem megyünk semmire</em>! Márpedig számunkra ez a fontos: ha egy ilyen cikket olvasva életünket úgy változtatjuk meg, hogy növeljük a zöldségfogyasztásunkat, akkor <em>várhatjuk-e ettől</em>, hogy megnő az élettartamunk?</p>
+<p>A sor ugyanerre a mintára sajnos igen hosszan folytatható. „Az indiai konyha rengeteg curry-t használ, és lám, velünk szemben ott szinte ismeretlenek a gyulladásos bélbetegségek!” (Biztos, hogy India és Magyarország között csak és kizárólag az az egyetlen különbség, hogy a főzéshez más mennyiségű curry-t használunk?) „Azokban az amerikai államokban, ahol többet alszanak, kevesebb a depressziós!” (Biztos, hogy ezen amerikai államok csak és kizárólag az alvással töltött órák számában térnek el a többitől?) A legszebb, amikor ugyanazt eljátsszuk oda és vissza is: „30 éve még nem használták ilyen széles körben a vérnyomás-csökkentőket, és jóval több is volt a magas vérnyomásos beteg!” (Biztos, hogy 2018 és 1988 között az egyetlen különbség a vérnyomás-csökkentők használatának a mértéke?) „30 éve még nem használták ilyen széles körben a védőoltásokat, és jóval kevesebb is volt az autista!” (Biztos, hogy 2018 és 1988 között az egyetlen különbség a védőoltások használatának a mértéke?)</p>
+<p>A jelenség egészen meglepő helyzetekben is felbukkanhat. A <a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html#fig:infarktus">2.3</a>. ábra mutatja, hogy a magyar Nemzeti Szívinfarktus Regiszter 2013 és 2014 évi adatai – több mint 20 ezer infarktus! – szerint mik a túlélési kilátásai egy infarktuson átesett betegnek a szerint, hogy dohányzik-e vagy sem. Jól látható, hogy a dohányzók görbéje mindvégig a nemdohányzók felett halad, nem is kevéssel: az infarktus utáni túlélésben <em>jót tesz</em> ha dohányzunk!</p>
+<div class="figure" style="text-align: center"><span id="fig:infarktus"></span>
+<img src="abrak/AzOrvosiMegismeresModszertana_2_Abra3A.png" alt="Bal oldal: Túlélés infarktus után: a vízszintes tengelyen az infarktus óta eltelt idő, a függőleges tengelyen az adott időben még életben lévők aránya látható. Jobb oldal: Az infarktust elszenvedett betegek életkorának eloszlása." width="40%" /><img src="abrak/AzOrvosiMegismeresModszertana_2_Abra3B.png" alt="Bal oldal: Túlélés infarktus után: a vízszintes tengelyen az infarktus óta eltelt idő, a függőleges tengelyen az adott időben még életben lévők aránya látható. Jobb oldal: Az infarktust elszenvedett betegek életkorának eloszlása." width="40%" />
+<p class="caption">
+Ábra 2.3: Bal oldal: Túlélés infarktus után: a vízszintes tengelyen az infarktus óta eltelt idő, a függőleges tengelyen az adott időben még életben lévők aránya látható. Jobb oldal: Az infarktust elszenvedett betegek életkorának eloszlása.
+</p>
+</div>
+<p>Vagy mégsem? Most már egész biztos mindenki rávágja: a dohányosok nem csak a dohányzás tényében térnek el a nem dohányosoktól! De még mennyire, hogy így van, számos más dologban eltérnek; a számunkra most legfontosabb az életkor: az ábra jobb oldala mutatja – pontosan ugyanazon személyekre vonatkozóan! – az életkor eloszlását dohányzás szerint. Gyönyörűen látható, hogy a dohányosok, egész mellbevágó módon, átlagosan mintegy 15 évvel <em>korábban</em> kapnak infarktust! Márpedig az infarktus utáni túlélésben az életkor egy rendkívül fontos tényező, így ez a 15 év bőven kompenzálja a dohányzás – esetleges – negatív hatását. (Esetleges, hiszen innentől kezdve nem tudhatjuk biztosan mi a helyzet: lehet, hogy dohányzásnak tényleg negatív a hatása, ahogy várjuk, de elvileg ettől még az is lehet, hogy nincs hatása, vagy akár lehet továbbra is pozitív, csak nem annyira, mint az az ábrából következne.)</p>
+<p>Vagy vegyük a következő esetet! 2005-ben Svédországban 9 millió 10 ezer 729 lakosból 91 ezer 709 halt meg, így ott a halálozási ráta 10,2/ezer fő/év. Ugyanebben az évben Chile-ben 15 millió 519 ezer 347 lakosból 86 ezer 100 halt meg, azaz ott a halálozási ráta 5,5/ezer fő/év.</p>
+<p>Micsoda? Svédországban <em>kétszer nagyobb</em> a halandóság, mint Chilében?! A dolgot még furcsábbá teszi, ha megnézzük az ún. korspecifikus mortalitásokat (<a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html#fig:svedchile">2.4</a>. ábra), ami azt mutatja, hogy adott életkorban mekkora a halandóság.</p>
+<div class="figure" style="text-align: center"><span id="fig:svedchile"></span>
+<img src="abrak/AzOrvosiMegismeresModszertana_2_Abra4A.png" alt="Bal oldal: Halandóság adott életkorban Chilében és Svédországban. Jobb oldal: ugyanez 10 életévenként, a háttérben feltüntetve a két ország korfáját is." width="40%" /><img src="abrak/AzOrvosiMegismeresModszertana_2_Abra4B.png" alt="Bal oldal: Halandóság adott életkorban Chilében és Svédországban. Jobb oldal: ugyanez 10 életévenként, a háttérben feltüntetve a két ország korfáját is." width="40%" />
+<p class="caption">
+Ábra 2.4: Bal oldal: Halandóság adott életkorban Chilében és Svédországban. Jobb oldal: ugyanez 10 életévenként, a háttérben feltüntetve a két ország korfáját is.
+</p>
+</div>
+<p>Jól látszik az emberi halandóság nagyon jellegzetes alakja: csecsemőkorban magas, de nagyon gyorsan leeső mortalitás (gyermekbetegségek fázisa), majd egy minimum – már túlesett a gyermekbetegségeken, de még nem kezdődnek a felnőttkoriak – után folyamatos, de lassú növekedés („elhasználódásos” mortalitás fázisa). Ami azonban számunkra most sokkal izgalmasabb, az a megfigyelés, hogy a svéd görbe mindvégig a chilei görbe <em>alatt</em> van! Azaz: minden életkorban jobbak a túlélési esélyek Svédországban!</p>
+<p>Most akkor ez hogy is van? Minden életkorban jobbak a túlélési esélyek Svédországban, de összességében sokkal rosszabbak?!</p>
+<p>Első ránézésre teljesen paradoxnak tűnhet, mi azonban már nem lepődünk meg rajta – nyilván valamilyen confounding van a háttérben! Csakugyan: a két ország között egyéb eltérés is van; ami itt fontos lesz: a korfa. Amint azt az ábra jobb oldala mutatja is, a chilei lakosság sokkal-sokkal fiatalabb összetételében, mint a svéd, így amikor a teljes halandóságot számoljuk, akkor ott az – előnyös – fiatalkori értékek jóval nagyobb súllyal fognak latba esni, míg a svédeknél ezeknek kisebb lesz a súlya és a – sokkal rosszabb – időskori értékeknek lesz nagyobb. Így jöhet ki a fenti végeredmény (hiszen azért a chilei 20 éveskori halandóság még mindig jobb, mint a svéd 70 éves – ezen múlik a jelenség). Ez tehát, bármennyire is máshogy hangzott első ránézésre, megint csak a confounding egy példája!</p>
+<p>Most már itt az ideje, hogy átugorjunk a következő, nagyon kézenfekvő kérdésre: akkor mégis mit tegyünk, hogy e jelenség fényében is megbízható következtetéseket tudjunk levonni?</p>
+
+</div>
+</div>
+<!-- Default Statcounter code for Ferenci Tamás
+elektronikus jegy https://tamas-ferenci.github.io/ -->
+<script type="text/javascript">
+var sc_project=12422840; 
+var sc_invisible=1; 
+var sc_security="d32cce24"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="látogató
+számláló" href="https://www.statcounter.hu/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12422840/0/d32cce24/1/"
+alt="látogató számláló"></a></div></noscript>
+<!-- End of Statcounter Code -->
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="bevezet-gondolatok-és-pár-történeti-szempont.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/tamas-ferenci/FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese/edit/master/02-alapokconfounding.Rmd",
+"text": "Szerkesztés"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese.pdf", "FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
