@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2. fejezet Az empirikus megismerés alapgondolata és a confounding | Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)</title>
   <meta name="description" content="Mind érdeklődőknek, mind orvosoknak hasznos összefoglaló, mely közérthetően bemutatja az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni." />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2. fejezet Az empirikus megismerés alapgondolata és a confounding | Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)" />
   <meta property="og:type" content="book" />
@@ -32,7 +32,7 @@
   
 <link rel="prev" href="bevezet-gondolatok-és-pár-történeti-szempont.html"/>
 <link rel="next" href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"/>
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/header-attrs-2.7.10/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,6 +50,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-19799395-2"></script>
 <script>
@@ -59,6 +61,7 @@
 
   gtag('config', 'UA-19799395-2');
 </script>
+
 
 
 
@@ -168,10 +171,10 @@
 <p>Vagy mégsem?</p>
 <div id="az-okozatiság-nyomában" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> Az okozatiság nyomában</h2>
-<p>A válaszhoz induljunk egy picit távolabbról. Érdemes felidézni, hogy milyen szerteágazóak azok a – fentihez hasonló – kérdések, melyekre választ szeretnénk adni az orvostudományban: Okoz-e agyrákot a mobiltelefon használata? A vörös hús fogyasztása vastagbélrákot? A császármetszéssel születés megnöveli-e annak kockázatát, hogy a gyermeknek később 1-es típusú cukorbetegsége lesz? És lehet-e a gyermek autista attól, hogy az anya paracetamolt szed a terhesség alatt? Itt van ez az új vérnyomáscsökkentő gyógyszerjelölt, vajon tényleg csökkenti-e a vérnyomást? Okozhat-e alvászavart mellékhatásként?</p>
+<p>A válaszhoz induljunk egy picit távolabbról. Érdemes felidézni, hogy milyen szerteágazóak azok a – fentihez hasonló – kérdések, melyekre választ szeretnénk adni az orvostudományban: Okoz-e agydaganatot a mobiltelefon használata? A vörös hús fogyasztása vastagbélrákot? A császármetszéssel születés megnöveli-e annak kockázatát, hogy a gyermeknek később 1-es típusú cukorbetegsége lesz? És lehet-e a gyermek autista attól, hogy az anya paracetamolt szed a terhesség alatt? Itt van ez az új vérnyomáscsökkentő gyógyszerjelölt, vajon tényleg csökkenti-e a vérnyomást? Okozhat-e alvászavart mellékhatásként?</p>
 <p>Ebben a listában igyekeztem, teljesen szándékosan, a lehető legkülönbözőbb kérdéseket összegyűjteni, melyekben látszólag egyetlen közös pont sincs. Ezt azért tettem, hogy még meglepőbb legyen a következő kijelentésem: azt állítom ugyanis, hogy bármennyire is különbözőnek tűnnek, valójában kivétel nélkül az összes felsorolt kérdés mögött – és milliónyi egyéb orvosi, egészségügyi kérdés mögött – pontosan ugyanaz a séma van! Persze, a konkrét részletek nagyon eltérnek, de ha ezektől megtisztítjuk az egyes kérdéseket, akkor a mélyben minden esetben ugyanazt találjuk.</p>
 <p>Az egyik komponens: minden kérdésben található valami, amit teljesen általános szóval <em>expozíciónak</em> fogunk hívni. Ez szó szerint „kitettséget” jelent, és tényleg azt is értjük alatta, hogy az alany ki volt téve valamilyen hatásnak. Ezt a legáltalánosabban értjük: a hatás lehet valami, amit szándékosan alkalmazunk az alanyon (pl. gyógyszert adunk neki), lehet valami, amit maga választ (pl. vörös húst fogyaszt), és olyasvalami is, aminek akaratán kívül van kitéve (pl. császármetszéssel született). Érdemes végignézni az összes előbbi példát, csakugyan mindegyikben azonosítható az expozíció, a mobiltelefon-használattól egészen a gyógyszerszedésig.</p>
-<p>A másik komponens: minden kérdésben található valamiféle eredmény, kimenet – ezt fogjuk <em>végpontnak</em> hívni. Ez lesz az orvosilag lényeges, általunk vizsgált történés; ismét csak, érdemes egy pillanatra visszanézni az előbbi listára, és mindegyik elemnél megkeresni ezt, az agyráktól az alvászavarig.</p>
+<p>A másik komponens: minden kérdésben található valamiféle eredmény, kimenet – ezt fogjuk <em>végpontnak</em> hívni. Ez lesz az orvosilag lényeges, általunk vizsgált történés; ismét csak, érdemes egy pillanatra visszanézni az előbbi listára, és mindegyik elemnél megkeresni ezt, az agydaganattól az alvászavarig.</p>
 <p>Ezzel megvan a séma két „oldala”, expozíció egyfelől, végpont másfelől, már csak egyetlen komponens hiányzik, amit vizsgálni akarunk minden ilyen és ezekhez hasonló kérdésben: az, hogy az expozíció és a végpont között van-e ok-okozati összefüggés. Szép szóval ezt hívhatjuk <em>kauzalitásnak</em>. Bármennyire is különbözőnek tűnnek a kérdések, e séma mindegyikre illeszkedik, mindegyikben azonosítható az expozíció, azonosítható a végpont, és mindegyikre igaz, hogy okozatiságot kutatunk.</p>
 <p>De mit is jelent ez a fogalom? Kézenfekvő értelmezés, hogy megnézzük, hogy hány beteg volt a légszennyezéses csoportban, megnézzük, hogy hány lett <em>volna</em> köztük, ha minden más változatlan lett volna, <em>de</em> nem lett volna légszennyezés – és a kettő különbség a légszennyezés hatása. Sajnos ezt a másodikat soha nem ismerhetjük, hiszen ez egy valójában létre nem jött, képzeletbeli helyzet. Éppen ezért jobb híján a nem légszennyezéses csoporthoz viszonyítunk, tehát nem <em>ugyanazon</em> csoport tényleges és képzeletbeli helyzetét vizsgáljuk, hanem két <em>különböző</em> csoport tényleges helyzetét viszonyítjuk <em>egymáshoz</em>. Lényegében azt mondjuk, hogy a nem légszennyezett környezetben felnövő gyermekek adatai mutatják, hogy mi lett <em>volna</em>, ha a légszennyezett környezetben felnövőknél nem lett volna légszennyezés.</p>
 <p>Csakhogy ez egy nagyon erős feltevés: kizárólag akkor igaz, ha a két csoport semmi másban nem tér el, egyedül a légszennyezettség tényében.</p>
@@ -187,7 +190,7 @@
 <div class="figure" style="text-align: center"><span id="fig:confoundingsema"></span>
 <img src="abrak/AzOrvosiMegismeresModszertana_2_Abra1A.png" alt="Bal oldal: Naiv megközelítés, jobb oldal: valós helyzet." width="40%" /><img src="abrak/AzOrvosiMegismeresModszertana_2_Abra1B.png" alt="Bal oldal: Naiv megközelítés, jobb oldal: valós helyzet." width="40%" />
 <p class="caption">
-Ábra 2.1: Bal oldal: Naiv megközelítés, jobb oldal: valós helyzet.
+2.1. ábra. Bal oldal: Naiv megközelítés, jobb oldal: valós helyzet.
 </p>
 </div>
 <p>Ha valaki nem hiszi el, hogy ilyen létezhet, akkor nézze meg képzeletbeli adatgyűjtésünk részletesebb eredményeit, melyet a következő táblázat mutat:</p>
@@ -230,7 +233,7 @@
 <div class="figure" style="text-align: center"><span id="fig:t1dmsema"></span>
 <img src="abrak/AzOrvosiMegismeresModszertana_2_Abra2.png" alt="Okoz-e 1-es típusú cukorbetegséget (T1DM) a császármetszés? Potenciális confounderek és hatásaik." width="90%" />
 <p class="caption">
-Ábra 2.2: Okoz-e 1-es típusú cukorbetegséget (T1DM) a császármetszés? Potenciális confounderek és hatásaik.
+2.2. ábra. Okoz-e 1-es típusú cukorbetegséget (T1DM) a császármetszés? Potenciális confounderek és hatásaik.
 </p>
 </div>
 <p>Példának okáért, az anyai diabetes és a császármetszés közötti nyílon pozitív jel van, mert a cukorbeteg anyáknak általában nagyobbak a magzataik, és ez a különféle téraránytalanságok miatt gyakrabban vezet császármetszéshez. Másrészt a cukorbetegségnek van egy erős genetikai komponense, így az anyai cukorbetegségből a gyermekéhez is pozitív nyíl vezet. És már ennyi is elég, hogy bajban legyünk: innentől kezdve, még ha azt is találjuk, hogy a császármetszéssel születettek körében több lesz később cukorbeteg (egyébként tényleg ez a helyzet), akkor sem tudhatjuk, hogy mi a valódi ok: csakugyan a császármetszés, vagy egyszerűen csak az, hogy a császármetszéssel születőknek gyakrabban cukorbeteg az édesanyja? És ez még csak az első confounder volt!</p>
@@ -246,7 +249,7 @@
 <div class="figure" style="text-align: center"><span id="fig:infarktus"></span>
 <img src="abrak/AzOrvosiMegismeresModszertana_2_Abra3A.png" alt="Bal oldal: Túlélés infarktus után: a vízszintes tengelyen az infarktus óta eltelt idő, a függőleges tengelyen az adott időben még életben lévők aránya látható. Jobb oldal: Az infarktust elszenvedett betegek életkorának eloszlása." width="40%" /><img src="abrak/AzOrvosiMegismeresModszertana_2_Abra3B.png" alt="Bal oldal: Túlélés infarktus után: a vízszintes tengelyen az infarktus óta eltelt idő, a függőleges tengelyen az adott időben még életben lévők aránya látható. Jobb oldal: Az infarktust elszenvedett betegek életkorának eloszlása." width="40%" />
 <p class="caption">
-Ábra 2.3: Bal oldal: Túlélés infarktus után: a vízszintes tengelyen az infarktus óta eltelt idő, a függőleges tengelyen az adott időben még életben lévők aránya látható. Jobb oldal: Az infarktust elszenvedett betegek életkorának eloszlása.
+2.3. ábra. Bal oldal: Túlélés infarktus után: a vízszintes tengelyen az infarktus óta eltelt idő, a függőleges tengelyen az adott időben még életben lévők aránya látható. Jobb oldal: Az infarktust elszenvedett betegek életkorának eloszlása.
 </p>
 </div>
 <p>Vagy mégsem? Most már egész biztos mindenki rávágja: a dohányosok nem csak a dohányzás tényében térnek el a nem dohányosoktól! De még mennyire, hogy így van, számos más dologban eltérnek; a számunkra most legfontosabb az életkor: az ábra jobb oldala mutatja – pontosan ugyanazon személyekre vonatkozóan! – az életkor eloszlását dohányzás szerint. Gyönyörűen látható, hogy a dohányosok, egész mellbevágó módon, átlagosan mintegy 15 évvel <em>korábban</em> kapnak infarktust! Márpedig az infarktus utáni túlélésben az életkor egy rendkívül fontos tényező, így ez a 15 év bőven kompenzálja a dohányzás – esetleges – negatív hatását. (Esetleges, hiszen innentől kezdve nem tudhatjuk biztosan mi a helyzet: lehet, hogy dohányzásnak tényleg negatív a hatása, ahogy várjuk, de elvileg ettől még az is lehet, hogy nincs hatása, vagy akár lehet továbbra is pozitív, csak nem annyira, mint az az ábrából következne.)</p>
@@ -255,7 +258,7 @@
 <div class="figure" style="text-align: center"><span id="fig:svedchile"></span>
 <img src="abrak/AzOrvosiMegismeresModszertana_2_Abra4A.png" alt="Bal oldal: Halandóság adott életkorban Chilében és Svédországban. Jobb oldal: ugyanez 10 életévenként, a háttérben feltüntetve a két ország korfáját is." width="40%" /><img src="abrak/AzOrvosiMegismeresModszertana_2_Abra4B.png" alt="Bal oldal: Halandóság adott életkorban Chilében és Svédországban. Jobb oldal: ugyanez 10 életévenként, a háttérben feltüntetve a két ország korfáját is." width="40%" />
 <p class="caption">
-Ábra 2.4: Bal oldal: Halandóság adott életkorban Chilében és Svédországban. Jobb oldal: ugyanez 10 életévenként, a háttérben feltüntetve a két ország korfáját is.
+2.4. ábra. Bal oldal: Halandóság adott életkorban Chilében és Svédországban. Jobb oldal: ugyanez 10 életévenként, a háttérben feltüntetve a két ország korfáját is.
 </p>
 </div>
 <p>Jól látszik az emberi halandóság nagyon jellegzetes alakja: csecsemőkorban magas, de nagyon gyorsan leeső mortalitás (gyermekbetegségek fázisa), majd egy minimum – már túlesett a gyermekbetegségeken, de még nem kezdődnek a felnőttkoriak – után folyamatos, de lassú növekedés („elhasználódásos” mortalitás fázisa). Ami azonban számunkra most sokkal izgalmasabb, az a megfigyelés, hogy a svéd görbe mindvégig a chilei görbe <em>alatt</em> van! Azaz: minden életkorban jobbak a túlélési esélyek Svédországban!</p>
@@ -310,6 +313,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
