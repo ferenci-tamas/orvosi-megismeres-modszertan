@@ -33,3 +33,5 @@ Remélem, hogy ez a jegyzet segítséget nyújt abban, hogy az olvasó mindezek 
 Az anyaggal kapcsolatban minden észrevételt, javaslatot, kritikát örömmel várok a [tamas.ferenci@medstat.hu](tamas.ferenci@medstat.hu) email-címen!
 
 Ez a jegyzet az Interpress Magazinban megjelent cikksorozatom kibővített, szerkesztett változata.
+
+A dolgozathoz adott segítségükért szeretnék köszönetet mondani (alfabetikus sorrendben) Szilágyi Eszter Szabinának és Tóth Andrásnak.
