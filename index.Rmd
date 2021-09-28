@@ -16,6 +16,8 @@ url: https://tamas-ferenci.github.io/FerenciTamas_AzOrvosiMegismeresModszertanaE
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(fig.align="center", out.width = "50%", echo = FALSE)
+library(data.table)
+library(ggplot2)
 ```
 
 # Előszó {-}

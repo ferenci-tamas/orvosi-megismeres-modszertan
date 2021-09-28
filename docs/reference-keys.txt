@@ -8,7 +8,11 @@ fig:svedchile
 fig:amberson
 fig:retegzes
 fig:eurdeathrate
-fig:rakepid
+fig:rakepidnyers
+fig:rakepidkorspecidoben
+fig:rakepidoregedes
+fig:rakepidkorspec
+fig:rakepidstandard
 fig:arbuthnot
 fig:arbuthnoteredmenyek
 fig:bayeshalo

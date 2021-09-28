@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)</title>
   <meta name="description" content="Mind érdeklődőknek, mind orvosoknak hasznos összefoglaló, mely közérthetően bemutatja az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni." />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)" />
   <meta property="og:type" content="book" />
@@ -31,9 +31,10 @@
   
   
 
-<link rel="next" href="bevezet-gondolatok-és-pár-történeti-szempont.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link rel="next" href="bevezető-gondolatok-és-pár-történeti-szempont.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -41,7 +42,6 @@
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -82,11 +82,11 @@
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Előszó</a></li>
-<li class="chapter" data-level="1" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html"><i class="fa fa-check"></i><b>1</b> Bevezető gondolatok, és pár történeti szempont</a>
+<li class="chapter" data-level="1" data-path="bevezető-gondolatok-és-pár-történeti-szempont.html"><a href="bevezető-gondolatok-és-pár-történeti-szempont.html"><i class="fa fa-check"></i><b>1</b> Bevezető gondolatok, és pár történeti szempont</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html#az-érvágás-esete-avagy-hogyan-lehet-valamit-2000-éven-át-rosszul-csinálni-úgy-hogy-senkinek-nem-tűnik-fel"><i class="fa fa-check"></i><b>1.1</b> Az érvágás esete, avagy hogyan lehet valamit 2000 éven át rosszul csinálni úgy, hogy senkinek nem tűnik fel</a></li>
-<li class="chapter" data-level="1.2" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html#empirikus-megismerés-az-orvostörténetben"><i class="fa fa-check"></i><b>1.2</b> Empirikus megismerés az orvostörténetben</a></li>
-<li class="chapter" data-level="1.3" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html#vita-egy-állásponttal"><i class="fa fa-check"></i><b>1.3</b> Vita egy állásponttal</a></li>
+<li class="chapter" data-level="1.1" data-path="bevezető-gondolatok-és-pár-történeti-szempont.html"><a href="bevezető-gondolatok-és-pár-történeti-szempont.html#az-érvágás-esete-avagy-hogyan-lehet-valamit-2000-éven-át-rosszul-csinálni-úgy-hogy-senkinek-nem-tűnik-fel"><i class="fa fa-check"></i><b>1.1</b> Az érvágás esete, avagy hogyan lehet valamit 2000 éven át rosszul csinálni úgy, hogy senkinek nem tűnik fel</a></li>
+<li class="chapter" data-level="1.2" data-path="bevezető-gondolatok-és-pár-történeti-szempont.html"><a href="bevezető-gondolatok-és-pár-történeti-szempont.html#empirikus-megismerés-az-orvostörténetben"><i class="fa fa-check"></i><b>1.2</b> Empirikus megismerés az orvostörténetben</a></li>
+<li class="chapter" data-level="1.3" data-path="bevezető-gondolatok-és-pár-történeti-szempont.html"><a href="bevezető-gondolatok-és-pár-történeti-szempont.html#vita-egy-állásponttal"><i class="fa fa-check"></i><b>1.3</b> Vita egy állásponttal</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><i class="fa fa-check"></i><b>2</b> Az empirikus megismerés alapgondolata és a confounding</a>
 <ul>
@@ -166,7 +166,7 @@
 <div id="header">
 <h1 class="title">Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)</h1>
 <p class="author"><em>Ferenci Tamás, <a href="mailto:tamas.ferenci@medstat.hu" class="email">tamas.ferenci@medstat.hu</a></em></p>
-<p class="date" style="margin-top: 1.5em;"><em>2021. május 12.</em></p>
+<p class="date"><em>2021. szeptember 28.</em></p>
 </div>
 <div id="előszó" class="section level1 unnumbered">
 <h1>Előszó</h1>
@@ -202,11 +202,10 @@ alt="látogató számláló"></a></div></noscript>
         </div>
       </div>
 
-<a href="bevezet-gondolatok-és-pár-történeti-szempont.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="bevezető-gondolatok-és-pár-történeti-szempont.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -246,6 +245,10 @@ gitbook.start({
 "text": null
 },
 "download": ["FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese.pdf", "FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

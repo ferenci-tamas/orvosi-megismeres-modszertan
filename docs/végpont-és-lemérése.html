@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>6. fejezet Végpont és lemérése | Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)</title>
   <meta name="description" content="Mind érdeklődőknek, mind orvosoknak hasznos összefoglaló, mely közérthetően bemutatja az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni." />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="6. fejezet Végpont és lemérése | Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)" />
   <meta property="og:type" content="book" />
@@ -32,8 +32,9 @@
   
 <link rel="prev" href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"/>
 
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -41,7 +42,6 @@
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -82,11 +82,11 @@
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Előszó</a></li>
-<li class="chapter" data-level="1" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html"><i class="fa fa-check"></i><b>1</b> Bevezető gondolatok, és pár történeti szempont</a>
+<li class="chapter" data-level="1" data-path="bevezető-gondolatok-és-pár-történeti-szempont.html"><a href="bevezető-gondolatok-és-pár-történeti-szempont.html"><i class="fa fa-check"></i><b>1</b> Bevezető gondolatok, és pár történeti szempont</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html#az-érvágás-esete-avagy-hogyan-lehet-valamit-2000-éven-át-rosszul-csinálni-úgy-hogy-senkinek-nem-tűnik-fel"><i class="fa fa-check"></i><b>1.1</b> Az érvágás esete, avagy hogyan lehet valamit 2000 éven át rosszul csinálni úgy, hogy senkinek nem tűnik fel</a></li>
-<li class="chapter" data-level="1.2" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html#empirikus-megismerés-az-orvostörténetben"><i class="fa fa-check"></i><b>1.2</b> Empirikus megismerés az orvostörténetben</a></li>
-<li class="chapter" data-level="1.3" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html#vita-egy-állásponttal"><i class="fa fa-check"></i><b>1.3</b> Vita egy állásponttal</a></li>
+<li class="chapter" data-level="1.1" data-path="bevezető-gondolatok-és-pár-történeti-szempont.html"><a href="bevezető-gondolatok-és-pár-történeti-szempont.html#az-érvágás-esete-avagy-hogyan-lehet-valamit-2000-éven-át-rosszul-csinálni-úgy-hogy-senkinek-nem-tűnik-fel"><i class="fa fa-check"></i><b>1.1</b> Az érvágás esete, avagy hogyan lehet valamit 2000 éven át rosszul csinálni úgy, hogy senkinek nem tűnik fel</a></li>
+<li class="chapter" data-level="1.2" data-path="bevezető-gondolatok-és-pár-történeti-szempont.html"><a href="bevezető-gondolatok-és-pár-történeti-szempont.html#empirikus-megismerés-az-orvostörténetben"><i class="fa fa-check"></i><b>1.2</b> Empirikus megismerés az orvostörténetben</a></li>
+<li class="chapter" data-level="1.3" data-path="bevezető-gondolatok-és-pár-történeti-szempont.html"><a href="bevezető-gondolatok-és-pár-történeti-szempont.html#vita-egy-állásponttal"><i class="fa fa-check"></i><b>1.3</b> Vita egy állásponttal</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><i class="fa fa-check"></i><b>2</b> Az empirikus megismerés alapgondolata és a confounding</a>
 <ul>
@@ -190,7 +190,7 @@
 <p>Ha már a korábban mondottaknál tartunk: talán emlékszik a nyájas Olvasó, hogy a tudomány jelen állása szerint nem tudhatjuk „biztosan”, hogy jót tesz-e, ha van nálunk ejtőernyő amennyiben kiesünk egy repülőgépből, legalábbis ha a biztosan alatt azt értjük, hogy „kísérlettel megvizsgálva”. Hivatkoztam is Smith és szerzőtársa cikkére, mely az igen tekintélyes British Medical Journal 2003-as karácsonyi számában jelent meg, és amelyikben rendkívül alapos kutatással feltárták, hogy egyetlen egy ilyen kísérletet sem végeztek! (Nyilván gúnyolódva azokon, akik a kísérleteket mindenhatónak állítják be.) Nos, jelenthetem, hogy az orvostudomány fejlődése megállíthatatlan, ugyanis a helyzet azóta megváltozott! A British Medical Journal-ben a napokban, egész pontosan december 13-án, természetesen csak teljes véletlenségből megint a karácsonyi különszámban megjelent a történelem első kísérletes vizsgálata, amely az ejtőernyő hatásosságát vizsgálta! A kísérlet alanyai tökéletesen randomizáltan kaptak vagy ejtőernyőt, vagy ejtőernyőt nem tartalmazó hátizsákot, ezt követően kiugrottak a repülőgépből, majd a kutatók rögzítették a földbe csapódáskor fellépő halálozások, illetve súlyos sérülések (a traumatológiában általánosan használatos ISS sérüléssúlyossági pontszám 15-nél nagyobb) fellépését. A kísérlet igen gondos tervezésű volt, az előző részben látott módon határozták meg a mintanagyságot, rögzítettek számos fontos betegjellemzőt, még arra is ügyeltek, hogy a felhasznált ejtőernyők, sőt, hátizsákok típusát és gyártóját dokumentálják, beszerezték az etikai engedélyt a kísérletre stb. Egyszóval egy minden elvárásnak megfelelő kutatásról van szó. Hadd fussak előre: a vizsgálat szerint az ejtőernyő nem csökkentette a földet éréskor bekövetkező halálozások és súlyos sérülések számát!</p>
 <p>Hogy ezt miért pont most, a klinikai kísérletek résztvevőinek speciális összetételéről szóló résznél mondom? Ehhez érdemes közelebbről megnézni a kísérlet pontos lefolytatását!</p>
 <p>A részvételre felkért alanyok két csoportból kerültek ki: egy részüket sugárhajtású repülőgépen repülés közben interjúvolták meg, hogy vállalják-e a kiugrást randomizáltan ejtőernyővel vagy hátizsákkal, más részüknek repülőgép-múzeumban, egy földön álló kisrepülőben tették fel ugyanezt a kérdést (<a href="végpont-és-lemérése.html#fig:ejtoernyo">6.1</a>. ábra). A fent említett eredményhez talán azt a mellékes információt érdemes hozzátenni, hogy az előbbi csoportból 0% vállalta a részvételt, míg az utóbbiak közül 100% (erre nincs ráhatásunk, önkéntesség, ugyebár!), így apróbb eltérések keletkeztek a klinikai kísérletbe bekerülő és be nem kerülő alanyok között: az utóbbiak esetében a repülőgép átlagos sebessége 800 km/h volt, az előbbieknél 0 km/h, az utóbbiaknál az átlagos ugrási magasság 9146 méter, az előbbieknél 60 centiméter…</p>
-<div class="figure" style="text-align: center"><span id="fig:ejtoernyo"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ejtoernyo"></span>
 <img src="abrak/AzOrvosiMegismeresModszertana_8_Abra1.jpg" alt="Reprezentatív példa a kísérletben részvételt vállaló alanyra (kontroll -- hátizsák -- csoport). Fontos megjegyezni, hogy a képen látható alany nem halt meg, illetve nem szenvedett súlyos traumás sérülést a földbe csapódáskor." width="70%" />
 <p class="caption">
 6.1. ábra. Reprezentatív példa a kísérletben részvételt vállaló alanyra (kontroll – hátizsák – csoport). Fontos megjegyezni, hogy a képen látható alany nem halt meg, illetve nem szenvedett súlyos traumás sérülést a földbe csapódáskor.
@@ -285,7 +285,7 @@
 </ol>
 <p>Gyönyörűen látható, hogy a gyógyszereket nagyon-nagyon különböző populációkban próbálták ki: volt, ahol csak 0,48% halt meg szív-érrendszeri okból a kontrollcsoportban, de volt, ahol több mint húszszor ennyi. (Ez a kezelés nélküli rizikó, ez jellemzi tehát, hogy milyen alanyok körében végezték a kísérletet.) Az abszolút rizikó-különbség ennek megfelelő drámai eltéréseket mutat, a legkisebb és a legnagyobb között több mint harmincötszörös a különbség. Igen ám, de – és most jön a lényeg – mindeközben a relatív hatás bámulatosan állandó, 10 és 30% közötti kockázatcsökkenés látható <em>függetlenül</em> attól, hogy milyen kockázatú populációban végezték a vizsgálatot! Az elsőként felsorolt kísérletet olyan populációban végezték, hogy kezelés nélkül fél százalék halt meg, az utolsót olyanban, ahol több mint 10, de a gyógyszer <em>relatív</em> hatása alig tér el!</p>
 <p>Mindezeket úgy is elmondhatjuk: a jelek szerint a gyógyszerre saját magára jellemző tulajdonság a relatív hatás, az az, ami állandó. Az abszolút hatás egy származtatott mutató, egy eredő: a (gyógyszerre jellemző) relatív hatás, és az (adott populációra jellemző) kockázat szorzata. A relatív hatás állandó, az abszolút hatás attól függ, hogy mennyi a kezelés nélküli kockázat: ahol nagy (pl. idős, sok társbetegséggel rendelkező beteg), ott az abszolút csökkenés is nagy lesz, ahol kicsi, ott kicsi (<a href="végpont-és-lemérése.html#fig:abszrelhatas">6.2</a>. ábra).</p>
-<div class="figure" style="text-align: center"><span id="fig:abszrelhatas"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:abszrelhatas"></span>
 <img src="abrak/AzOrvosiMegismeresModszertana_8_Abra2.png" alt="Ugyanolyan (20\%-os) relatív csökkenés abszolút hatása attól függ, hogy honnan indulunk: minél nagyobb a kezelés nélküli kockázat, annál nagyobb abszolút különbség tartozik ugyanakkora relatív csökkenéshez." width="90%" />
 <p class="caption">
 6.2. ábra. Ugyanolyan (20%-os) relatív csökkenés abszolút hatása attól függ, hogy honnan indulunk: minél nagyobb a kezelés nélküli kockázat, annál nagyobb abszolút különbség tartozik ugyanakkora relatív csökkenéshez.
@@ -312,7 +312,7 @@
 <h2><span class="header-section-number">6.5</span> Különböző kimenetek közös nevezőre hozása</h2>
 <p>De mi az a másik terület, ahol jól jönnek az abszolút mutatók? Ez azonnal világos lesz, ha nem csak a főhatással, hanem a mellékhatásokkal is elkezdünk számolni. A tripla kombináció egyik problémája, hogy a szteroid-tartalma miatt megnöveli a tüdőgyulladás esélyét: a kísérlet eredményei szerint a dupla kombináció esetében évi átlag 0,061 ilyen fordult elő, de az új szernél már 0,096.</p>
 <p>Mondhatjuk, hogy kb. 50%-kal megnöveli a tüdőgyulladás kockázatát, ami nagyon hasznos mutató, ha más betegre vagy betegcsoportra akarjuk vetíteni ezt, tehát a kutatásból tényleg ezt kell kiolvasni, ahogy láttuk is, de nem sokat segít az összehasonlításban! Vegyük ugyanis észre, hogy a „25%-kal csökkenti az állapotromlás kockázatát” és az „50%-kal növeli a tüdőgyulladás kockázatát” egymással <em>totálisan összevethetetlen</em> kijelentések! Miért? Azért, mert nagyon más a kiindulási alap! Állapotromlásból évi 1 fordul elő, tüdőgyulladásból tizedannyi (<a href="végpont-és-lemérése.html#fig:copdkezeles">6.3</a>. ábra).</p>
-<div class="figure" style="text-align: center"><span id="fig:copdkezeles"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:copdkezeles"></span>
 <img src="FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese_files/figure-html/copdkezeles-1.png" alt="A kétféle végponton mért hatás nem összevethető, ha a hatást relatív mutatóval mérjük, mert teljesen más a kiindulópontjuk." width="90%" />
 <p class="caption">
 6.3. ábra. A kétféle végponton mért hatás nem összevethető, ha a hatást relatív mutatóval mérjük, mert teljesen más a kiindulópontjuk.
@@ -349,7 +349,7 @@
 <h3><span class="header-section-number">6.8.1</span> Vadászni mentünk… szignifikanciára</h3>
 <p>Ez az 5% ilyen értelmű hibavalószínűség remekül működik akkor, ha egyetlen végpontunk van. Bonyolódik azonban a helyzet akkor, ha több végpontot hasonlítunk és azokat „vagylagosan” kezeljük, tehát akkor kiáltunk fel, hogy találtunk valamit, ha <em>bármelyik</em> végpontban van eltérés. Mondjuk, hogy a gyógyszer hatását nem csak azzal mérjük le, hogy csökkenti-e a szívroham kockázatát, hanem azzal is, hogy csökkenti-e az agyvérzését. <em>Külön-külön</em> 5% a valószínűsége, hogy alaptalanul kiáltunk fel (tehát mondjuk, hogy az adott végponton hat a gyógyszer, miközben a valóságban nem is), de együtt már közel sem! Hiszen ezen hozzáállás mellett akkor is hibásan kiáltunk fel, ha <em>vagy</em> az egyik, <em>vagy</em> a másik végponton hibásan kiáltunk fel; ennek valószínűsége természetesen összekombinálódik a külön-külön vett tévedések valószínűségéből. Mintha lenne két húszoldalú, szabályos dobókockánk, és azt kérdeznénk, hogy mekkora a valószínűsége, hogy a kettőből <em>valamelyik</em> 1-est dob – ami értelemszerűen nagyobb, mint, hogy bármelyikkel külön 1-est dobunk (ami 5% ebben a példában). Nem a két 5% összege, ahogy azt sokan gondolnák elsőre, a matematika ennél egy nagyon kicsit bonyolultabb, de most ez nem különösebben érdekes, a végeredmény: 9,75%.</p>
 <p>Az orvosi példánkra visszatérve mindez azt jelenti, hogy bár mi azt hirdetjük magunkról, hogy 5%-on vizsgálódtunk, azaz a téves találat (nem hat a gyógyszer de mi mégis azt mondjuk, hogy igen) valószínűsége 5%, a valóságban e vagylagos hozzáállás mellett az ilyen tévedés valószínűsége ennek majdnem kétszerese lesz! Ahogy nő a végpontok száma a helyzet csak egyre romlik, ezt mutatja az <a href="végpont-és-lemérése.html#fig:alfainflacio">6.4</a>. ábra. Érdemes úgy is ránézni a kérdésre, hogy az 5% azt jelenti, hogy ha sehol nincsen semmilyen hatás, akkor is várhatóan minden 20. esetben mégis találunk. Avagy: aki keres, az talál – csak itt ez nem feltétlenül jó hír…</p>
-<div class="figure" style="text-align: center"><span id="fig:alfainflacio"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:alfainflacio"></span>
 <img src="FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese_files/figure-html/alfainflacio-1.png" alt="Adott számú végpont vagylagos összehasonlítása esetén annak a valószínűsége, hogy legalább egy tévesen hatást mutat, ha valójában semelyik végponton nincsen hatás (és a különböző végpontok függetlenek egymástól). A halvány szürke vonal az 5\%-ot mutatja, mely az egyes összehasonlítások külön-külön vett ilyen hibavalószínűsége." width="90%" />
 <p class="caption">
 6.4. ábra. Adott számú végpont vagylagos összehasonlítása esetén annak a valószínűsége, hogy legalább egy tévesen hatást mutat, ha valójában semelyik végponton nincsen hatás (és a különböző végpontok függetlenek egymástól). A halvány szürke vonal az 5%-ot mutatja, mely az egyes összehasonlítások külön-külön vett ilyen hibavalószínűsége.
@@ -375,7 +375,7 @@
 <p>Bizonyos értelemben a fenti még a jobbik eset. Ez ugyanis direkt csalás, joggal mondhatjuk, hogy ilyet nem lehet véletlenül csinálni, és így a jóhiszemű kutatóknak nem kell aggódniuk. A probléma, mint sok más esetben, akkor jelentkezik, amikor az ilyen többszörös összehasonlításoknak teljesen legitim okai vannak. A vezetékneves példa lehet, hogy abszurd, de mi van, ha egy betegségnél mi sem tudjuk, hogy melyik laborváltozóban okoz eltérést, és ezt akarjuk kideríteni? Mi van, ha egy környezeti hatás esetében több száz betegségről szeretnénk kideríteni, hogy valamelyiknek növeli-e a kockázatát?</p>
 <p>A legjobb példa minderre talán az alcsoport-elemzések intézménye. Alcsoport-elemzés alatt azt értik az orvosi irodalomban, amikor egy vizsgálat végén az egész elemzést megismétlik úgy, hogy az adatokat leszűkítik különböző csoportokra. Hogyan hat a gyógyszer csak a férfiakban és csak a nőkben? Cukorbetegekben és nem cukorbetegekben? Idősekben és fiatalokban?</p>
 <p>Itt is az a nehéz helyzet, amikor nem rosszhiszeműen járunk el, mint az írás elején felhozott hasonló példában, hanem <em>tényleg</em> kíváncsiak vagyunk erre, mert elvileg <em>tényleg</em> lehet, hogy a gyógyszer bizonyos csoportokban nem hat (vagy csak bizonyos csoportokban hat). Ezért az alcsoport-elemzéseknek van létjogosultságuk, de hogy legalábbis óvatosan kell velük bánni, arra az irodalom egyik legszórakoztatóbb példáját egy 1988-as kutatás hozta. Ezt ma már minden bizonnyal nem így neveznék el – annak idején ugyanis az ISIS-2 nevet kapta… Ez a kísérlet azt vizsgálta, hogy 3 kezelési stratégia (egy sztreptokináznak nevezett vérrögoldó adása, aszpirin adása, vagy mindkettő adása egyszerre) hogyan hat infarktusban a halálozás megelőzésére. A <a href="végpont-és-lemérése.html#fig:isis2">6.5</a>. ábra mutatja az eredményeket. Az alsó kettő meglehetősen szokásos alcsoport-analízis: a cukorbetegekben nem hat a gyógyszer (a nem cukorbetegekben igen), az infarktuson átesettekben nem hat a gyógyszer (a korábban infarktust el nem szenvedőknél igen). Ha csak az ábra jobb oldalát nézzük, akkor a legfelső pár is nagyon hasonló ezekhez, de nézzük csak meg jobban a feliratot a bal oldalon! A legfelső alcsoport-analízis tárgya, hogy a betegnek mi a csillagjegye – az eredmények szerint Ikrek és Mérleg jegyűekben nem hat a gyógyszer, a többiekben igen…</p>
-<div class="figure" style="text-align: center"><span id="fig:isis2"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:isis2"></span>
 <img src="abrak/AzOrvosiMegismeresModszertana_10_Abra2.png" alt="Kissé meglepő eredmények az aszpirin hatására vonatkozóan: facsimile oldal az ISIS-2 vizsgálat közleményéből. A jobb oldalon lévő folytonos függőleges vonal a „hatástalanság vonala”, amelyik csoport vízszintes vonala metszi, ott az adott csoportban nem hat a gyógyszer. A csoportok fentről lefelé: csillagjegy (Ikrek/Mérleg, egyéb), korábbi infarktus (igen, nem), cukorbeteg (igen, nem)." width="90%" />
 <p class="caption">
 6.5. ábra. Kissé meglepő eredmények az aszpirin hatására vonatkozóan: facsimile oldal az ISIS-2 vizsgálat közleményéből. A jobb oldalon lévő folytonos függőleges vonal a „hatástalanság vonala”, amelyik csoport vízszintes vonala metszi, ott az adott csoportban nem hat a gyógyszer. A csoportok fentről lefelé: csillagjegy (Ikrek/Mérleg, egyéb), korábbi infarktus (igen, nem), cukorbeteg (igen, nem).
@@ -384,7 +384,7 @@
 <p>A megállapítás, amelyet ez a példa nagyon szellemesen szemléltet, hogy a cukorbetegség és a csillagjegy között az <em>egyetlen</em> különbség, hogy az előbbihez jobb filozófiát tudnak kitalálni az orvosok, hogy ott miért nem hat a gyógyszer, az utóbbihoz meg talán picit kevésbé… De az eredmények statisztikai bizonyítóereje <em>pontosan ugyanaz</em> mindkét esetben!</p>
 <p>Mi akkor a megoldás mindezen problémákra? A kérdés összetett, itt talán csak elég két pontot kiemelni. Az egyik, hogy bizonyos esetekben nem akarjuk megoldani a problémát. Az alcsoport-elemzéseknél sokszor ez a helyzet: a cikkek nem próbálják meg statisztikai úton helyrerakni a dolgot, cserében viszont ekkor az alcsoport-elemzések eredményét nem lehet bizonyítékként kezelni (legfeljebb felvetésként: ha valahol gyanús eltérést látunk, akkor azt rendes vizsgálatban célirányosan meg kell nézni, de az alcsoport-analízis önmagában nem bizonyít, csak felveti a gyanút).</p>
 <p>Máskor szeretnénk korrigálni a többszörös összehasonlítások helyzetét; a jó hír, hogy erre vannak módszerek. Az alkalmazásuk kapcsán sok vita van, de az fontos, hogy egyáltalán lehet a problémán statisztikai úton segíteni. Vegyük például a következő ötletet. Mi a probléma alapja? Az, hogy hiába rakjuk 5%-ra a szintet összehasonlításonként, összességében ez meg fog nőni, ahogy azt az <a href="végpont-és-lemérése.html#fig:alfainflacio">6.4</a>. ábra is mutatja, jóval 5% fölé. Akkor mit csináljunk? Vegyük le a szintet összehasonlításonként, hogy összességében kapjunk 5%-ot! Bebizonyítható matematikai úton példának okáért, hogy ha az összehasonlításonkénti szintet úgy állítjuk be, hogy az 5%-ot elosztjuk az összehasonlítások számával (tehát például 10 összehasonlítás esetén 0,5%-ra rakjuk), akkor az összességében vett hibavalószínűség – annak a valószínűsége, hogy téves módon hatást mutatunk ki <em>bárhol</em>, miközben igazából sehol nincs hatás – nem lehet több mint 5%. A módszer neve Bonferroni-korrekció, az eredményét a <a href="végpont-és-lemérése.html#fig:bonferroni">6.6</a>. ábra szemlélteti.</p>
-<div class="figure" style="text-align: center"><span id="fig:bonferroni"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:bonferroni"></span>
 <img src="FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese_files/figure-html/bonferroni-1.png" alt="A Bonferroni korrekció hatása: az alaphelyzet ugyanaz, mint az 1. ábra esetében, de az összehasonlításonkénti szignifikanciaszintet lecsökkentettük, annyiadrészére ahány összehasonlítást végeztünk. Jól látszik az eredmény: a téves találat valószínűsége igen pontosan 5\% marad (illetve soha nem megy fölé), akárhány összehasonlítást is végzünk." width="90%" />
 <p class="caption">
 6.6. ábra. A Bonferroni korrekció hatása: az alaphelyzet ugyanaz, mint az 1. ábra esetében, de az összehasonlításonkénti szignifikanciaszintet lecsökkentettük, annyiadrészére ahány összehasonlítást végeztünk. Jól látszik az eredmény: a téves találat valószínűsége igen pontosan 5% marad (illetve soha nem megy fölé), akárhány összehasonlítást is végzünk.
@@ -421,7 +421,6 @@ alt="látogató számláló"></a></div></noscript>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -461,6 +460,10 @@ gitbook.start({
 "text": null
 },
 "download": ["FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese.pdf", "FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

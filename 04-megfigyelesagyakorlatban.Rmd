@@ -77,15 +77,35 @@ knitr::include_graphics("abrak/AzOrvosiMegismeresModszertana_4_Abra2Bal.png")
 knitr::include_graphics("abrak/AzOrvosiMegismeresModszertana_4_Abra2Jobb.png")
 ```
 
-Természetesen a probléma nem csak különböző országok összevetésekor merülhet fel, hanem magasabb szinten (például különböző kontinensek összevetése) vagy alacsonyabb szinten (egy ország különböző megyéinek összevetése) is, sőt, akár akkor is, ha ugyanazt a területi egységet vetjük össze, de eltérő időpontokban. A lényeg, hogy ha eltérnek a korfák, akkor bajban leszünk, feltéve, hogy a kor hat a megbetegedési vagy halálozási kockázatra, ezért a standardizálás használata nagyon elterjedt az epidemiológiában. Példának okáért, a \@ref(fig:rakepid). ábra mutatja a magyarországi vastagbélrákos esetek előfordulásának néhány alapvető jellemzőjét a Nemzeti Rákregiszter adatai alapján. (Ezekkel az ábrákkal az Olvasó maga is kísérletezhet, például kipróbálhatja más időszakokra vagy más tumor-típusokra a http://research.physcon.uni-obuda.hu/ címen elérhető Rákregiszter vizualizátor alkalmazás segítségével.) Jól látható, hogy a nyers ráták szerint meglehetősen drámai romlás mutatkozik 2001 és 2014 között: a 40-50/100 ezer fő/év esetszám megnőtt 60-70 körülire (felső sor). A dologban az a furcsa, hogy mindeközben minden egyes életkorban külön-külön az előfordulás szinte változatlan maradt (középső sor)! Ez meg mégis hogyan lehet?! A fentiek alapján már biztos mindenki rávágja a választ: öregedett a népesség! Ezt a Rákregisztertől függetlenül tudjuk (az expozíció, hogy melyik évben vagyunk, összefügg a zavaró változóval, az életkorral) *és* a növekvő életkor emeli a vastagbélrák kockázatát (a zavaró változó hat a végpontra), ez utóbbit mutatja a középső sor másik ábrája. Kész is tehát a confounding: valójában a vastagbélrákosok számának növekedése, legalábbis nagy részben, egyszerűen annak tudható be, hogy idősebb lett a népesség! Az alsó sor két ábrája ezt adja meg, immár számszerű pontossággal: a standardizált megbetegedési rátákból látható, hogy szó nincs ennyire drámai és egységes növekedésről.
+Természetesen a probléma nem csak különböző országok összevetésekor merülhet fel, hanem magasabb szinten (például különböző kontinensek összevetése) vagy alacsonyabb szinten (egy ország különböző megyéinek összevetése) is, sőt, akár akkor is, ha ugyanazt a területi egységet vetjük össze, de eltérő időpontokban. A lényeg, hogy ha eltérnek a korfák, akkor bajban leszünk, feltéve, hogy a kor hat a megbetegedési vagy halálozási kockázatra, ezért a standardizálás használata nagyon elterjedt az epidemiológiában. Példának okáért, a \@ref(fig:rakepidnyers). ábra mutatja a magyarországi vastagbélrákos esetek előfordulásának nyers incidenciáját a Nemzeti Rákregiszter adatai alapján. (Ezekkel az ábrákkal az Olvasó maga is kísérletezhet, például kipróbálhatja más időszakokra vagy más tumor-típusokra a http://research.physcon.uni-obuda.hu/ címen elérhető Rákregiszter vizualizátor alkalmazás segítségével.)
 
-```{r rakepid, fig.cap='A vastagbélrák magyarországi epidemiológiája. Felső sor: a nyers megbetegedési ráták (eset/100 ezer fő/év) megyénként, 2001-ben és 2014-ben; az országos érték 49 és 63. Középső sor, balra: az egyes életkorok megbetegedési rátáinak alakulása időben (a függőleges tengely logaritmikus beosztású, hogy a nagyon különböző értékek is jól láthatóak legyenek egy ábrán). Középső sor, jobbra: a megbetegedési ráta függése az életkortól. Alsó sor: a standardizált megbetegedési ráták megyénként, 2001-ben és 2014-ben; az országos érték 53 és 58.', fig.show='hold', out.width='40%'}
-knitr::include_graphics("abrak/AzOrvosiMegismeresModszertana_4_Abra3FelsoBal.png")
-knitr::include_graphics("abrak/AzOrvosiMegismeresModszertana_4_Abra3FelsoJobb.png")
-knitr::include_graphics("abrak/AzOrvosiMegismeresModszertana_4_Abra3KozepsoBal.png")
-knitr::include_graphics("abrak/AzOrvosiMegismeresModszertana_4_Abra3KozepsoJobb.png")
-knitr::include_graphics("abrak/AzOrvosiMegismeresModszertana_4_Abra3AlsoBal.png")
-knitr::include_graphics("abrak/AzOrvosiMegismeresModszertana_4_Abra3AlsoJobb.png")
+```{r rakepidnyers, fig.cap='A vastagbélrák magyarországi epidemiológiája. Felső sor: a nyers megbetegedési ráták (eset/100 ezer fő/év) alakulása 2000 és 2018 között.', out.width = "90%"}
+knitr::include_graphics("abrak/C18Nyers.png")
+```
+
+Jól látható, hogy a nyers ráták szerint meglehetősen drámai romlás mutatkozik 2000 és 2018 között: az 50 körüli érték 60 fölé nőtt, ez több mint 20%-os emelkedés!
+
+Igen ám, de nézzük meg mit látunk, ha korcsoportonként külön-külön nézzük az előfordulást (\@ref(fig:rakepidkorspecidoben). ábra)! Rögtön feltűnik, hogy egyetlen korcsoportban sem volt érdemi romlás.
+
+```{r rakepidkorspecidoben, fig.cap='Az egyes életkorok megbetegedési rátáinak alakulása időben (a függőleges tengely logaritmikus beosztású, hogy a nagyon különböző értékek is jól láthatóak legyenek egy ábrán)', out.width = "90%"}
+knitr::include_graphics("abrak/C18KorspecIdoben.png")
+```
+
+Ez meg mégis hogyan lehet?! A fentiek alapján már biztos mindenki rávágja a választ: öregedett a népesség! Ezt a Rákregisztertől függetlenül tudjuk (az expozíció, tehát, hogy melyik évben vagyunk, összefügg a zavaró változóval, az életkorral, \@ref(fig:rakepidoregedes). ábra) *és* a növekvő életkor emeli a vastagbélrák kockázatát (a zavaró változó hat a végpontra, \@ref(fig:rakepidkorspec). ábra). Ne feledjük, a problémához mindkét tényező egyidejű jelenléte kellett!
+
+```{r rakepidoregedes, fig.cap='A magyar társadalom öregedése (életkori megoszlás 2000-ben és 2018-ban).', out.width = "90%"}
+PopPyramid <- readRDS(url("https://github.com/tamas-ferenci/RakregiszterVizualizator/raw/master/Nepesseg_OtevesKor_Nemenkent_Megyenkent_1990_2019.rds"))
+ggplot(PopPyramid[Year%in%c(2000, 2018), .(sum(PopMidYear)), .(Year, Age)], aes(x = Age, y = V1/1000, group = factor(Year), color = factor(Year))) + geom_line() + labs(x = "Életkor [év]", y = "Lakosság [ezer fő]", color = "Év") + theme_bw()
+```
+
+```{r rakepidkorspec, fig.cap='A megbetegedési ráta függése az életkortól.', out.width = "90%"}
+knitr::include_graphics("abrak/C18Korspec.png")
+```
+
+Kész is tehát a confounding: valójában a vastagbélrákosok számának növekedése, legalábbis nagy részben, egyszerűen annak tudható be, hogy idősebb lett a népesség! Az \@ref(fig:rakepidstandard). ábra ezt mutat meg, immár számszerű pontossággal: a standardizált megbetegedési rátákból látható, hogy szó nincs ennyire drámai -- vagy egyáltalán, bármilyen érzékelhető -- növekedésről.
+
+```{r rakepidstandard, fig.cap='A standardizált megbetegedési ráták alakulása 2000 és 2018 között.', out.width = "90%"}
+knitr::include_graphics("abrak/C18Standardizalt.png")
 ```
 
 Bár a standardizálás leggyakrabban a fenti kontextusban, különböző országok megbetegedési és halálozási mutatóinak összevetése kapcsán jön elő, valójában egy teljesen általános megoldási lehetősége a confoundingnak. Térjünk vissza az eredeti példánkra! A probléma, ilyen szemmel ránézve, hogy bár mindkét csoportban ugyanúgy 6 és 1% a megbetegedési arány mindkét rétegekben, a 6 és 1%-ot nagyon eltérő súlyokkal kombináljuk össze: a légszennyezett területen élő csoport esetében a kevésbé tehetősek 6%-os értéke 55% súlyt kap, a tehetősebbek 1%-os száma pedig 45%-ot (ellenőrizzük le: $0,55 \cdot 6 + 0,45 \cdot 1 = 3,8\%$), addig a nem légszennyezett területen felnövő csoport esetében a 6% mindössze 6,25% súlyt kap (itt kevésbé tehetős lakosság él -- ugye épp ez volt az egyik oka a confoundingnak), az 1% viszont 93,75%-ot ($0,0625 \cdot 6 + 0,9375 \cdot 1 = 1,3\%$). A probléma tehát itt is az, hogy nagyon más „korfával” (szocioökonómiai helyzet-fával) kombináljuk össze az egyes rétegek értékeit. Hogy egy, de immár korrekt számba sűrítsük a probléma megoldását, egészítsük ki a rétegzést standardizálással! Ahelyett, hogy különböző súlyokat használunk, válasszunk egy közöset, legyen ez a Nagy és Alapos Standard IPM módra (röviden: NASI). A NASI-ban a rossz szocioökonómiai csoport aránya legyen 30%, a jóé 70%. Ha ezek után kiszámoljuk a mentális betegségek előfordulását mindkét csoportban, de immár egységesen a NASI-t használva, akkor a légszennyezett területen felnövő csoportra $0,3 \cdot 6 + 0,7 \cdot 1 = 2,5\%$-t, a nem légszennyezettre $0,3 \cdot 6 + 0,7 \cdot 1 = 2,5\%$-ot kapunk. Ezek lesznek a standardizált mentális megbetegedési ráták a két területen -- ezekből már jól látszik, hogy *valójában* nincs különbség! A 3,8%-os és 1,3%-os (nyers) ráták közti különbség teljes egészében a szocioökonómiai helyzeten keresztül megvalósuló confoundingból jött, a légszennyezésnek nincs valóságos hatása a gyermekek mentális megbetegedéseire.

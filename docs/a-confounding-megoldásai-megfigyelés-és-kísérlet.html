@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3. fejezet A confounding megoldásai – megfigyelés és kísérlet | Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)</title>
   <meta name="description" content="Mind érdeklődőknek, mind orvosoknak hasznos összefoglaló, mely közérthetően bemutatja az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni." />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3. fejezet A confounding megoldásai – megfigyelés és kísérlet | Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)" />
   <meta property="og:type" content="book" />
@@ -32,8 +32,9 @@
   
 <link rel="prev" href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"/>
 <link rel="next" href="megfigyeléses-vizsgálatok-a-gyakorlatban.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -41,7 +42,6 @@
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -82,11 +82,11 @@
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Előszó</a></li>
-<li class="chapter" data-level="1" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html"><i class="fa fa-check"></i><b>1</b> Bevezető gondolatok, és pár történeti szempont</a>
+<li class="chapter" data-level="1" data-path="bevezető-gondolatok-és-pár-történeti-szempont.html"><a href="bevezető-gondolatok-és-pár-történeti-szempont.html"><i class="fa fa-check"></i><b>1</b> Bevezető gondolatok, és pár történeti szempont</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html#az-érvágás-esete-avagy-hogyan-lehet-valamit-2000-éven-át-rosszul-csinálni-úgy-hogy-senkinek-nem-tűnik-fel"><i class="fa fa-check"></i><b>1.1</b> Az érvágás esete, avagy hogyan lehet valamit 2000 éven át rosszul csinálni úgy, hogy senkinek nem tűnik fel</a></li>
-<li class="chapter" data-level="1.2" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html#empirikus-megismerés-az-orvostörténetben"><i class="fa fa-check"></i><b>1.2</b> Empirikus megismerés az orvostörténetben</a></li>
-<li class="chapter" data-level="1.3" data-path="bevezet-gondolatok-és-pár-történeti-szempont.html"><a href="bevezet-gondolatok-és-pár-történeti-szempont.html#vita-egy-állásponttal"><i class="fa fa-check"></i><b>1.3</b> Vita egy állásponttal</a></li>
+<li class="chapter" data-level="1.1" data-path="bevezető-gondolatok-és-pár-történeti-szempont.html"><a href="bevezető-gondolatok-és-pár-történeti-szempont.html#az-érvágás-esete-avagy-hogyan-lehet-valamit-2000-éven-át-rosszul-csinálni-úgy-hogy-senkinek-nem-tűnik-fel"><i class="fa fa-check"></i><b>1.1</b> Az érvágás esete, avagy hogyan lehet valamit 2000 éven át rosszul csinálni úgy, hogy senkinek nem tűnik fel</a></li>
+<li class="chapter" data-level="1.2" data-path="bevezető-gondolatok-és-pár-történeti-szempont.html"><a href="bevezető-gondolatok-és-pár-történeti-szempont.html#empirikus-megismerés-az-orvostörténetben"><i class="fa fa-check"></i><b>1.2</b> Empirikus megismerés az orvostörténetben</a></li>
+<li class="chapter" data-level="1.3" data-path="bevezető-gondolatok-és-pár-történeti-szempont.html"><a href="bevezető-gondolatok-és-pár-történeti-szempont.html#vita-egy-állásponttal"><i class="fa fa-check"></i><b>1.3</b> Vita egy állásponttal</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><i class="fa fa-check"></i><b>2</b> Az empirikus megismerés alapgondolata és a confounding</a>
 <ul>
@@ -170,7 +170,7 @@
 <div id="egy-aranyérmes-megoldás" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Egy aranyérmes megoldás</h2>
 <p>Mit tudunk tenni? <em>Törekedni</em> sokféleképp lehet arra, hogy a csoportok csak a vizsgált tényezőben térjenek el, de <em>biztosan</em> elérni csak egyféleképp. Tulajdonképpen az a meglepő, hogy a megoldás milyen későn merült fel. 1931-ben a michigan-i William H. Maybury Tüdőszanatórium orvosa, James Burns Amberson (<a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html#fig:amberson">3.1</a>. ábra) ki akarta deríteni, mégpedig empirikusan, hogy egy sanocrysin nevű szervetlen aranyvegyület vajon gyógyítja-e a TBC-t (elég sok írás született ennek lehetőségéről akkoriban). Az – <em>ugyebár!</em> – nem jó megoldás, hogy összehasonlítjuk a gyógyszert kapó és gyógyszert nem kapó betegek gyógyulását, hiszen mi van, ha ők másban is eltérnek a gyógyszerben részesülés tényén túl? Mi van, ha a gyógyszert inkább kapták a fiatalok (vagy pont, hogy az idősek), inkább kapták a férfiak vagy a nők, inkább kapták a több vagy kevesebb társbetegséggel rendelkezők stb. Ez jelen esetben a legkevésbé sem elméleti spekuláció, nagyon is könnyen lehet, hogy egy új, még nem jól ismert kezelést inkább a jobb állapotú és így egyúttal legjobb gyógyhajlamú betegeknek írnak fel inkább az orvosok. Tehát a gyógyszert kapó és nem kapó csoportok ilyen összehasonlítása teljesen félrevezető lehet – belefutottunk a confounding problémájába.</p>
-<div class="figure" style="text-align: center"><span id="fig:amberson"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:amberson"></span>
 <img src="abrak/AzOrvosiMegismeresModszertana_3_Abra1.jpg" alt="James Burns Amberson (1890-1979)." width="50%" />
 <p class="caption">
 3.1. ábra. James Burns Amberson (1890-1979).
@@ -232,7 +232,6 @@ alt="látogató számláló"></a></div></noscript>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -272,6 +271,10 @@ gitbook.start({
 "text": null
 },
 "download": ["FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese.pdf", "FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
