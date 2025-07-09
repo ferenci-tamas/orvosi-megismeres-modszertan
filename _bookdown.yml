@@ -1,9 +1,0 @@
-book_filename: "FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese"
-language:
-  ui:
-    chapter_name: !expr function(i) paste0(i, ". fejezet")
-    edit: "Szerkesztés"
-  label:
-    fig: !expr function(i) paste0(i, ". ábra. ")
-delete_merged_file: true
-output_dir: "docs"

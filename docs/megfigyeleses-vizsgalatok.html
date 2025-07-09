@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="hu-HU" xml:lang="hu-HU"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Mind érdeklődőknek, mind orvosoknak, egészségügyi szakdolgozóknak szóló összefoglaló, mely igyekszik közérthetően bemutatni az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni.">
+
+<title>4&nbsp; Megfigyeléses vizsgálatok a gyakorlatban – Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./veletlen-ingadozas.html" rel="next">
+<link href="./megfigyeles-kiserlet.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-364982630eef5352dd1537128a8ed5cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nincs találat",
+    "search-matching-documents-text": "találat",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "További találatok elrejtése",
+    "search-more-match-text": "további találat ebben a dokumentumban",
+    "search-more-matches-text": "további találat ebben a dokumentumban",
+    "search-clear-button-title": "Törlés",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Mégse",
+    "search-submit-button-title": "Keresés",
+    "search-label": "Keresés"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="4&nbsp; Megfigyeléses vizsgálatok a gyakorlatban – Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)">
+<meta property="og:description" content="Mind érdeklődőknek, mind orvosoknak, egészségügyi szakdolgozóknak szóló összefoglaló, mely igyekszik közérthetően bemutatni az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni.">
+<meta property="og:image" content="https://ferenci-tamas.github.io/orvosi-megismeres-modszertana/abrak/AzOrvosiMegismeresModszertana_4_Abra1FelsoBal.png">
+<meta property="og:site_name" content="Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)">
+<meta property="og:image:height" content="2400">
+<meta property="og:image:width" content="2400">
+<meta name="twitter:title" content="4&nbsp; Megfigyeléses vizsgálatok a gyakorlatban – Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)">
+<meta name="twitter:description" content="Mind érdeklődőknek, mind orvosoknak, egészségügyi szakdolgozóknak szóló összefoglaló, mely igyekszik közérthetően bemutatni az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni.">
+<meta name="twitter:image" content="https://ferenci-tamas.github.io/orvosi-megismeres-modszertana/abrak/AzOrvosiMegismeresModszertana_4_Abra1FelsoBal.png">
+<meta name="twitter:image-height" content="2400">
+<meta name="twitter:image-width" content="2400">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./megfigyeleses-vizsgalatok.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Megfigyeléses vizsgálatok a gyakorlatban</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Keresés" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ferenci-tamas/orvosi-megismeres-modszertana" title="Forráskód" class="quarto-navigation-tool px-1" aria-label="Forráskód"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Letöltés" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Letöltés"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./ferenci-tamas-orvosi-megismeres-modszertana.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Letöltés PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./ferenci-tamas-orvosi-megismeres-modszertana.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Letöltés ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Megosztás" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Megosztás"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Keresés"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Előszó</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bevezetes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Bevezető gondolatok, és pár történeti szempont</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./alapok-confounding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Az empirikus megismerés alapgondolata és a confounding</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./megfigyeles-kiserlet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">A confounding megoldásai – megfigyelés és kísérlet</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./megfigyeleses-vizsgalatok.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Megfigyeléses vizsgálatok a gyakorlatban</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./veletlen-ingadozas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">A véletlen szerepe az orvosi vizsgálatok kiértékelésében</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vegpont.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Végpont és lemérése</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tartalomjegyzék</h2>
+   
+  <ul>
+  <li><a href="#a-rétegzés" id="toc-a-rétegzés" class="nav-link active" data-scroll-target="#a-rétegzés"><span class="header-section-number">4.1</span> A rétegzés</a></li>
+  <li><a href="#a-standardizálás" id="toc-a-standardizálás" class="nav-link" data-scroll-target="#a-standardizálás"><span class="header-section-number">4.2</span> A standardizálás</a></li>
+  <li><a href="#kitérő-arról-hogy-miért-jó-ha-egy-országban-sokan-halnak-meg-rákban" id="toc-kitérő-arról-hogy-miért-jó-ha-egy-országban-sokan-halnak-meg-rákban" class="nav-link" data-scroll-target="#kitérő-arról-hogy-miért-jó-ha-egy-országban-sokan-halnak-meg-rákban"><span class="header-section-number">4.3</span> Kitérő arról, hogy miért jó, ha egy országban sokan halnak meg rákban</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ferenci-tamas/orvosi-megismeres-modszertana/edit/main/megfigyeleses-vizsgalatok.qmd" class="toc-action"><i class="bi bi-github"></i>Az oldal szerkesztése</a></li><li><a href="https://github.com/ferenci-tamas/orvosi-megismeres-modszertana/blob/main/megfigyeleses-vizsgalatok.qmd" class="toc-action"><i class="bi empty"></i>Forráskód megtekintése</a></li><li><a href="https://github.com/ferenci-tamas/orvosi-megismeres-modszertana/issues/new" class="toc-action"><i class="bi empty"></i>Észrevétel jelzése</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Megfigyeléses vizsgálatok a gyakorlatban</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Fontos előrebocsátani, hogy ez egy olyan komplex téma, így a mostani cél a legkevésbé sem a módszerek teljeskörű bemutatása. A cél ezzel szemben annak szemléltetése, hogy egyáltalán <em>van</em> ilyen módszer – mert ez sem nyilvánvaló! Mégis, hogyan tudjuk megmondani, hogy mi a légszennyezettség valódi hatása a mentális betegségekre, ha egyszer a légszennyezettebb területen élők nem csak a légszennyezettségnek kitettségben térnek el a többiektől?</p>
+<p>Nagyon fontos megismételni, hogy e módszerek, és egyáltalán, bármilyen szóba jövő módszer <em>kizárólag</em> azon zavaró változók hatását tudja kiszűrni, amikről egyáltalán eszünkbe jut, hogy confounderek, és amiknek az értékét le tudjuk mérni (azaz meg tudjuk határozni, fel tudjuk jegyezni mindegyik alanyra). Ezeket sem biztos, hogy tökéletesen szűrik, de az biztos, hogy amiről nincs információnk, pláne amiről eszünkbe sem jutott, hogy confounder, azt <em>nem</em> tudjuk kiszűrni – szemben a randomizálással! Hát persze: ez volt a kísérlet hatalmas előnye.</p>
+<p>Lássunk tehát néhány ilyen módszert! Az áttekintés olyannyira nem lesz teljeskörű, hogy még a legnépszerűbb módszer, az ún. többváltozós regressziós modellezés sem fog szerepelni benne – a cél ugyanis nem a részletek megismertetése, hanem az, hogy érezhető legyen a „dolog íze”, hogy hogyan lehet egyáltalán ezt a problémát leküzdeni.</p>
+<section id="a-rétegzés" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="a-rétegzés"><span class="header-section-number">4.1</span> A rétegzés</h2>
+<p>Az érdekes az, hogy az egyik legkézenfekvőbb módszert tulajdonképpen már láttuk! Idézzük fel a táblázatot, melyben a képzeletbeli légszennyezettség/mentális betegség kutatásunk eredményeit közöltük a cikksorozat korábbi részében:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 21%">
+<col style="width: 23%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Légszennyezett</th>
+<th>Nem légszennyezett</th>
+<th>Összesen</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rossz szocioökonómiai helyzet</td>
+<td>6% (3300/55000)</td>
+<td>6% (375/6250)</td>
+<td>6% (3675/61250)</td>
+</tr>
+<tr class="even">
+<td>Jó szocioökonómiai helyzet</td>
+<td>1% (450/45000)</td>
+<td>1% (935/93750)</td>
+<td>1% (1385/138750)</td>
+</tr>
+<tr class="odd">
+<td>Összesen</td>
+<td>3,8% (3750/100000)</td>
+<td>1,3% (1310/100000)</td>
+<td>2,5% (5060/200000)</td>
+</tr>
+</tbody>
+</table>
+<p>Látszik, hogy az alsó Összesen sor – a naiv vizsgálat – hibás eredményt szolgáltat: úgy tűnik belőle, hogy a légszennyezettség növeli a mentális betegségek előfordulását: 3,8% az 1,3%-kal szemben. Igen ám, de ha <em>megbontjuk</em> a számításokat a confounder szerint, azaz a zavaró változó minden lehetséges értékére <em>külön-külön</em> is elvégezzük az összes számítást, akkor helyes eredményt kapunk: 6% a 6%-kal szemben és 1% az 1%-kal szemben. Így ugyan már nem egy eredményünk van, hanem kettő, de látható belőlük, hogy a légszennyezettségnek nincs valódi hatása.</p>
+<p>Az orvosi irodalomban ezt a módszert szokás rétegzésnek hívni. (A szakzsargonban ugyanis az ilyen megbontással kapott csoportokat rétegnek hívják: az emberek szocioökonómiai helyzet szerint a „jó” és a „rossz” réteg valamelyikébe tartoznak a mostani példánkban.)</p>
+<p>A módszer tehát pofonegyszerű: bontsuk a confounder szerint rétegekre a mintánkat, és egyszerűen annyit tegyünk meg, hogy az elemzést nem összességében, hanem rétegenként külön-külön hajtjuk végre.</p>
+<p>Sajnos a gyakorlatban ezt sokszor könnyebb mondani, mint megcsinálni. A módszer hatalmas előnye, hogy semmilyen feltételezéssel nem él arra vonatkozólag, hogy az egyes változók milyen kapcsolatban vannak egymással, tehát akármilyenben is vannak, mindenképp működik, de ennek ára van. Az egyik probléma, hogy a valóságban nem egy confounder van: nézzük meg a cukorbetegség és a császármetszéssel születés példáját, nem kevesebb, mint 6 confoundert soroltunk fel. A helyzet valójában ennél is rosszabb: a valóságban ugyanis általában nem tudhatjuk, hogy mik a confounderek! Orvosi megfontolások, korábbi irodalmi adatok stb. alapján tippelnünk kell, azaz valójában inkább <em>potenciális</em> confounderekről beszélhetünk, melyek hatását mind szűrni kell, hiszen nem tudhatjuk, hogy közülük mely(ek) az igazi zavaró változó(k). Emiatt vannak olyan vizsgálatok is, ahol akár 10, 20 vagy annál is több confoundert akarunk kiszűrni.</p>
+<p>Hogy ez miért probléma? Vegyük a legegyszerűbb esetet, amikor mindegyik zavaró változó két réteget határoz meg. A gond az, hogy ha <em>egyszerre</em> kettő szerint rétegzünk, akkor már 4 rétegünk lesz (például férfi – cukorbeteg, férfi – nem cukorbeteg, nő – cukorbeteg, nő – nem cukorbeteg), ha 3 szerint, akkor 8, és így tovább, a rétegek száma mértani haladvány szerint nő, képzelhetjük, hogy mennyi lesz, ha 20 zavaró változó szerint szűrünk… És ez még a legegyszerűbb eset, amikor mindegyiknek két kimenete van, még nagyobb szorzótényezők jönnek be, ha valamelyik kettőnél több értéket vehet fel. Külön probléma a folytonos változók kérdése, tehát azok, amelyeknek nem csak néhány kategória lehet a kimenete, hanem egy szám, mint például az életkor. Itt muszáj csoportosítanunk (pl. 0-10 év, 10-20 év stb.), csakhogy ezt meg lehetetlen jól megcsinálni: ha túl tág intervallumokat veszünk fel, akkor egybemosunk akár nagyon különböző dolgokat (az előbbi csoportosítás esetében egy 1 napos újszülött és egy 9 éves kisiskolás ugyanolyan életkorú!), ha viszont erre tekintettel szűk intervallumokat veszünk fel, akkor rengeteg rétegünk lesz. Mindezeket együtt szemlélteti az <a href="#fig-retegzes" class="quarto-xref"><span>4.1</span></a>. ábra annak példáján, hogy a dohányzás hogyan hat a szívinfarktus utáni túlélésre.</p>
+<div id="fig-retegzes" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-retegzes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="abrak/AzOrvosiMegismeresModszertana_4_Abra1FelsoBal.png" class="img-fluid figure-img"></p>
+<figcaption>Túlélés infarktus után; a vízszintes tengelyen az infarktus óta eltelt idő, a függőleges tengelyen az adott időben még életben lévők aránya látható.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="abrak/AzOrvosiMegismeresModszertana_4_Abra1FelsoJobb.png" class="img-fluid figure-img"></p>
+<figcaption>A túlési adatok rétegzése életkor szerint.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="abrak/AzOrvosiMegismeresModszertana_4_Abra1AlsoBal.png" class="img-fluid figure-img"></p>
+<figcaption>A túlélési adatok további rétegzése nem szerint.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="abrak/AzOrvosiMegismeresModszertana_4_Abra1AlsoJobb.png" class="img-fluid figure-img"></p>
+<figcaption>A túlélési adatok még további rétegzés cukorbetegség szerint.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-retegzes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Ábra&nbsp;4.1: Az infarktus utáni túlélés, különféleképp rétegzett vizsgálatokban.
+</figcaption>
+</figure>
+</div>
+<p>A probléma igazából kettős. Egyrészt rétegzés esetén nem egyetlen eredményt kapunk, hanem sokat, adott esetben nagyon sokat – ez minden mást félretéve sem túl praktikus, ahogy az előbbi ábra is mutatja, amin jól érzékelhető, hogy a rétegek számának növekedésével egyre áttekinthetetlenebbé válik a helyzet. De a helyzet ennél rosszabb, ez ugyanis nem csak kényelmi problémákat okoz: ha nagyon sok rétegünk van, akkor az egyes rétegekbe egyre kevesebb alany fog jutni, hiszen ők is szétoszlanak a rétegek között. Nagyon könnyen lehet, hogy még egy egyébként sok alanyt bevonó vizsgálatban is kevés 60 és 70 év közötti, cukorbeteg, nem magasvérnyomásos, korábbi infarktuson átesett, de stroke-on át nem esett, dohányzó nő lesz… Ami azért gond, mert ekkor a rétegenként külön-külön végzett vizsgálatok nagyon kevés alany adatait fogják felhasználni, ami miatt az eredményük bizonytalan lesz! Nagyon sok réteg esetén az egyes rétegekbe egyre kevesebb beteg jut, így azokból csak egyre bizonytalanabbul lehet becsülni a túlélési görbéket – ez a magyarázat arra, hogy a jobb alsó ábrán miért néznek ki egyes görbék olyan furcsán: van köztük, amit mindössze 5-10, sőt, 2 vagy 3 betegből kellett megbecsülni (noha az egész adatbázis több ezer beteget tartalmaz). Jól látszik, hogy az életkor milyen problémás önmagában is: 5 évet egybemos ez a felbontás – de még így is 9 kategóriát ad.</p>
+</section>
+<section id="a-standardizálás" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="a-standardizálás"><span class="header-section-number">4.2</span> A standardizálás</h2>
+<p>E problémák közül az első kezelésére van egy egyszerű megoldás, ami ugyan nem tekinthető korszerűnek, de ennek ellenére, jórészt történeti okokból, számos területen használják, így érdemes megismerkedni vele – ez a standardizálás.</p>
+<p>Az alapötlet bemutatásához vegyük elő a svéd/chilei halandóság példáját. Emlékeztetőül: Svédországban 2005-ben 10,2 halálozás történt ezer lakosra vonatkoztatva, Chilében 5,5/ezer fő volt a halandóság. Mint láttuk, a meglepő számok magyarázata a confounding: a zavaró tényező az életkor, ugyanis külön-külön vizsgálva minden életkorban kisebb a svéd halandóság (ahogy azt vártuk is!), csak épp nagyon más a két ország korfája: a chilei lakosság összetételében sokkal-sokkal több a fiatal. Így amikor a halandóságot számoljuk, akkor Chilében a fiatalkori, sokkal jobb értékek (mert azért a chilei fiatalok halandósága még mindig jobb, mint a svéd időseké – ezen múlik a dolog) nagyobb súllyal esnek latba, ezért lesz ott alacsonyabb a halálozási ráta. Az előző részben ezt grafikusan láttuk, most nézzük számszerűen (a jobb szélső oszloppal egyelőre ne törődjünk):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 36%">
+<col style="width: 25%">
+<col style="width: 9%">
+<col style="width: 5%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Korcsoport</th>
+<th>Halandóság adott korcsoportban [/ezer fő/év]</th>
+<th></th>
+<th>Létszám megoszlás (korfa) [%]</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>Svédország</td>
+<td>Chile</td>
+<td>Svédország</td>
+<td>Chile</td>
+<td>Segi-Doll standard</td>
+</tr>
+<tr class="even">
+<td>0-14</td>
+<td>0,28</td>
+<td>0,73</td>
+<td>17,6</td>
+<td>24,2</td>
+<td>31,0</td>
+</tr>
+<tr class="odd">
+<td>15-39</td>
+<td>0,49</td>
+<td>0,90</td>
+<td>32,3</td>
+<td>39,9</td>
+<td>37,0</td>
+</tr>
+<tr class="even">
+<td>40-44</td>
+<td>1,11</td>
+<td>1,86</td>
+<td>6,8</td>
+<td>7,8</td>
+<td>6,0</td>
+</tr>
+<tr class="odd">
+<td>45-49</td>
+<td>1,83</td>
+<td>2,80</td>
+<td>6,5</td>
+<td>6,6</td>
+<td>6,0</td>
+</tr>
+<tr class="even">
+<td>50-54</td>
+<td>3,14</td>
+<td>4,27</td>
+<td>6,5</td>
+<td>5,3</td>
+<td>5,0</td>
+</tr>
+<tr class="odd">
+<td>55-59</td>
+<td>5,04</td>
+<td>6,86</td>
+<td>7,1</td>
+<td>4,4</td>
+<td>4,0</td>
+</tr>
+<tr class="even">
+<td>60-64</td>
+<td>8,20</td>
+<td>11,33</td>
+<td>6,0</td>
+<td>3,5</td>
+<td>4,0</td>
+</tr>
+<tr class="odd">
+<td>65-69</td>
+<td>13,49</td>
+<td>16,86</td>
+<td>4,5</td>
+<td>2,9</td>
+<td>3,0</td>
+</tr>
+<tr class="even">
+<td>70-74</td>
+<td>21,63</td>
+<td>28,92</td>
+<td>3,9</td>
+<td>2,2</td>
+<td>2,0</td>
+</tr>
+<tr class="odd">
+<td>75-</td>
+<td>82,33</td>
+<td>76,15</td>
+<td>8,8</td>
+<td>3,5</td>
+<td>2,0</td>
+</tr>
+</tbody>
+</table>
+<p>Ha valaki szeretné, ellenőrizheti is a számításokat: <span class="math inline">\(0,176 \cdot 0,28 + 0,323 \cdot 0,49 + \ldots + 0,088 \cdot 82,33 = 10,2\)</span>, és hasonlóan Chile esetében.</p>
+<p>Erre mondhatjuk, hogy ez egy szokásos demográfiai táblázat, de ha ilyen szemmel megnézzük, akkor ez igazából nem más, mint egy confounding megoldása rétegzéssel! A zavaró változó az életkor volt, e szerint rétegeztünk, és ez csakugyan meg is oldotta a problémát: jól látszik, hogy Svédország gyakorlatilag minden korcsoportban jobb halandósági mutatókkal rendelkezik.</p>
+<p>És gyönyörűen látszik a rétegzés utolsóként említett problémája is: nem egyetlen eredményt kapunk. Milyen kényelmes volt (helytelenül) azt mondani, hogy „Svédország: 10,2, ezzel szemben Chile 5,5”, most ezzel azt tudjuk csak (helyesen) szembeállítani, hogy „0-14 év között Svédország 0,28, ezzel szemben Chile 0,73, 15-39 év között Svédország 0,49, ezzel szemben Chile 0,90, 40-44 év között…” – nem valami praktikus! Mennyivel jobb lenne, ha tudnánk egyetlen, de mégis korrekt számot mondani!</p>
+<p>Szerencsére erre a problémára van megoldás. A trükk az lesz, hogy első lépésben rétegzünk, azaz szétbontunk, csakhogy utána csinálunk egy második lépést, amelynek a keretében újra összetesszük a rétegeket, hogy egyetlen számhoz jussunk eredményként – csakhogy ezt az összerakást okosan hajtjuk végre! Mi volt a probléma, ami a rossz eredményre vezetett? Az, hogy az egyes korosztályokra jellemző halandóságokat különböző korfákkal súlyozva adtuk össze: Chilében a fiatalkori, Svédországban az idősebb életkorbeli halandóságok kaptak nagyobb súlyt. A megoldás kínálkozik: számoljunk ugyanúgy, mint eddig, de használjuk <em>ugyanazt</em> a korfát mindkét országnál! Hiszen a „rossz” számok is felfoghatóak úgy, mint amik ilyen lebontás-összerakás módszerrel jönnek ki, jelesül, ha két különböző korfát használunk; legyen akkor az említett okos összerakás az, ha ugyanazt a korfát használjuk. Például a svéd korfát használva immár <em>mindkét</em> országban, a Svédországra kapott halandóság 10,2 (értelemszerűen), a Chile-re kapott halandóság <span class="math inline">\(0,176 \cdot 0,73 + 0,323 \cdot 0,90 + \ldots + 0,088 \cdot 76,15 = 10,8\)</span>. Hoppá! Máris helyreállít a világ rendje, a chilei érték rosszabb. Persze használhatjuk a chilei korfát is, ekkor Svédországra kapunk 4,9-et – megint csak rendben vagyunk, hiszen Chilére pedig értelemszerűen 5,5 marad az eredmény! Természetesen használhatnánk mindkét országra Magyarország korfáját, Trinidad és Tobago korfáját, Középfölde korfáját, a lényeg, hogy ugyanazt használjuk mindkét országnál. Más kérdés, hogy a gyakorlatban ez így nem túl célszerű, hiszen ha mindenki mást választ, akkor teljesen összehasonlíthatatlan eredmények jönnének ki, sokkal szerencsésebb megállapodni egy közös korfában, hogy aztán mindenki azt használja – így a különböző kutatások eredményei egymással is összevethetőek lesznek. Ilyen megállapodások léteznek is, standard korfának szokás hívni őket; a táblázat jobb szélső oszlopa az egyik ilyen népszerű standardot, a Segi-Doll korfát tartalmazza.</p>
+<p>Ha ezzel számolunk, akkor Svédországra <span class="math inline">\(0,31 \cdot 0,28 + 0,37 \cdot 0,49 + \ldots + 0,02 \cdot 82,33 = 3,6\)</span>-ot, Chile-re pedig <span class="math inline">\(0,31 \cdot 0,73 + 0,37 \cdot 0,90 + \ldots + 0,02 \cdot 76,15 = 4,4\)</span>-et kapunk. Íme, a rossz módszernek megfelelő egyszerűség (két, minden további nélkül összevethető szám), de korrekt eredménnyel! Ezt az eljárást szokás direkt standardizálásnak nevezni, az így kapott mutatót pedig standardizált mutatónak, jelen esetben tehát standardizált halálozási rátának. (Ezt fontos hozzátenni, hiszen ezek nem igazi halálozási ráták, lévén, hogy az adott korcsoport halandóságát nem az országban neki megfelelő aránnyal szoroztuk, tehát lényegében egy fiktív helyzetet számoltunk ki. A számértéknek így nincs önálló értelme, csak összehasonlításban értelmezhető.)</p>
+<p>Ha megegyezünk, hogy minden ország például a Segi-Doll korfához standardizálva közli a halálozási rátáját, akkor az így kapott eredmények már az – adott esetben rettenetesen különböző – életkori összetételek ellenére is összevethetőek lesznek! Természetesen az sem kötelező, hogy az összes halálozást számoljuk, nyugodtan nézhetjük csak egy konkrét betegségből előforduló halálozásokat, sőt, vehetjük a megbetegedések fellépését is. A probléma ekkor is ugyanúgy jelentkezne, ha a betegség előfordulása összefügg az életkorral (ami meglehetősen tipikus) és az országok korfái lényegesen eltérnek. Az egyszerűen kiszámolt megbetegedési vagy halálozási ráták – szép néven egyébként ezeket nyers mutatóknak szokták nevezni – nagyon félrevezetőek lehetnek ez esetben, de a standardizált mutatók használata megoldja ezt a problémát.</p>
+<p>Legalábbis az életkorra vonatkozóan! Mert ne felejtsük el, hogy ezzel csak az életkori eltérések hatását szűrtük ki, semmi mást. Természetesen, ha nem egy, hanem két szempont szerint tudunk rétegezni, mondjuk életkor és nem szerint is le tudjuk bontani a halálozásokat, a standardizálós trükk ekkor is bevethető, hogy mégis visszajussunk egy – immár nemi és életkori eltérésekre <em>egyaránt</em> korrigált! – számhoz, ehhez persze ekkor már a standardnak is életkor és nem szerint bontottnak kell lennie. Ha még több szempont van, akkor a helyzet pontosan ugyanúgy bonyolódik, mint a rétegzésnél láttuk, hiszen a standardizálás első lépése is – természetesen – egy rétegzés.</p>
+<p>Példának okáért, az <a href="#fig-eurdeathrate" class="quarto-xref"><span>4.2</span></a>. ábra mutatja az európai országok halálozási rátáit nyersen és standardizálva. Látszik az egészen drámai hatás: a nyers rátákból azt gondolhatnánk, hogy Törökországban a legjobb a halandósági helyzet, a többi ország között pedig nincsenek túl nagy különbségek. A standardizáltból viszont kiderül, hogy valójában Törökország helyzete egyáltalán nem kiugróan jó (nem halnak meg sokan, de a fiatalabb lakosság <em>ellenére</em> sem kifejezetten alacsony a halálozás), a többi ország között pedig nagyon is vannak különbségek (ugyan hasonló arányban halnak meg, csakhogy közben eltérő a korfa!).</p>
+<div id="fig-eurdeathrate" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eurdeathrate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="abrak/AzOrvosiMegismeresModszertana_4_Abra2Bal.png" class="img-fluid figure-img"></p>
+<figcaption>Nyers ráta.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="abrak/AzOrvosiMegismeresModszertana_4_Abra2Jobb.png" class="img-fluid figure-img"></p>
+<figcaption>Standardizált ráta.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eurdeathrate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Ábra&nbsp;4.2: Halálozási ráták (minden lényeges halálokból) az Eurostat által gyűjtött országokban NUTS2 szinten. Az adminisztratív határokra vonatkozó térkép forrása: © Eurographics.
+</figcaption>
+</figure>
+</div>
+<p>Természetesen a probléma nem csak különböző országok összevetésekor merülhet fel, hanem magasabb szinten (például különböző kontinensek összevetése) vagy alacsonyabb szinten (egy ország különböző megyéinek összevetése) is, sőt, akár akkor is, ha ugyanazt a területi egységet vetjük össze, de eltérő időpontokban. A lényeg, hogy ha eltérnek a korfák, akkor bajban leszünk, feltéve, hogy a kor hat a megbetegedési vagy halálozási kockázatra, ezért a standardizálás használata nagyon elterjedt az epidemiológiában. Példának okáért, a <a href="#fig-rakepidnyers" class="quarto-xref"><span>4.3</span></a>. ábra mutatja a magyarországi vastagbélrákos esetek előfordulásának nyers incidenciáját a Nemzeti Rákregiszter adatai alapján. (Ezekkel az ábrákkal az Olvasó maga is kísérletezhet, például kipróbálhatja más időszakokra vagy más tumor-típusokra a https://research.physcon.uni-obuda.hu/ címen elérhető Rákregiszter vizualizátor alkalmazás segítségével.)</p>
+<div id="fig-rakepidnyers" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rakepidnyers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="abrak/C18Nyers.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rakepidnyers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Ábra&nbsp;4.3: A vastagbélrák nyers megbetegedési rátáinak (eset/100 ezer fő/év) alakulása Magyarországon 2000 és 2018 között.
+</figcaption>
+</figure>
+</div>
+<p>Jól látható, hogy a nyers ráták szerint meglehetősen drámai romlás mutatkozik 2000 és 2018 között: az 50 körüli érték 60 fölé nőtt, ez több mint 20%-os emelkedés!</p>
+<p>Igen ám, de nézzük meg mit látunk, ha korcsoportonként külön-külön nézzük az előfordulást (<a href="#fig-rakepidkorspecidoben" class="quarto-xref"><span>4.4</span></a>. ábra)! Rögtön feltűnik, hogy egyetlen korcsoportban sem volt érdemi romlás.</p>
+<div id="fig-rakepidkorspecidoben" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rakepidkorspecidoben-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="abrak/C18KorspecIdoben.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rakepidkorspecidoben-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Ábra&nbsp;4.4: Az egyes életkorok nyers vastagbélrák megbetegedési rátáinak alakulása időben (a függőleges tengely logaritmikus beosztású, hogy a nagyon különböző értékek is jól láthatóak legyenek egy ábrán).
+</figcaption>
+</figure>
+</div>
+<p>Ez meg mégis hogyan lehet?! A fentiek alapján már biztos mindenki rávágja a választ: öregedett a népesség! Ezt a Rákregisztertől függetlenül tudjuk (az expozíció, tehát, hogy melyik évben vagyunk, összefügg a zavaró változóval, az életkorral, <a href="#fig-rakepidoregedes" class="quarto-xref"><span>4.5</span></a>. ábra) <em>és</em> a növekvő életkor emeli a vastagbélrák kockázatát (a zavaró változó hat a végpontra, <a href="#fig-rakepidkorspec" class="quarto-xref"><span>4.6</span></a>. ábra). Ne feledjük, a problémához mindkét tényező egyidejű jelenléte kellett!</p>
+<div id="fig-rakepidoregedes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rakepidoregedes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="abrak/rakepidoregedes.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rakepidoregedes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Ábra&nbsp;4.5: A magyar társadalom öregedése (életkori megoszlás 2000-ben és 2018-ban).
+</figcaption>
+</figure>
+</div>
+<div id="fig-rakepidkorspec" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rakepidkorspec-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="abrak/C18Korspec.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rakepidkorspec-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Ábra&nbsp;4.6: A vastagbélrák megbetegedési rátájának függése az életkortól.
+</figcaption>
+</figure>
+</div>
+<p>Kész is tehát a confounding: valójában a vastagbélrákosok számának növekedése, legalábbis nagy részben, egyszerűen annak tudható be, hogy idősebb lett a népesség! Az <a href="#fig-rakepidstandard" class="quarto-xref"><span>4.7</span></a>. ábra ezt mutat meg, immár számszerű pontossággal: a standardizált megbetegedési rátákból látható, hogy szó nincs ennyire drámai – vagy egyáltalán, bármilyen érzékelhető – növekedésről.</p>
+<div id="fig-rakepidstandard" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rakepidstandard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="abrak/C18Standardizalt.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rakepidstandard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Ábra&nbsp;4.7: A vastagbélrák standardizált megbetegedési rátájának alakulása 2000 és 2018 között.
+</figcaption>
+</figure>
+</div>
+<p>Bár a standardizálás leggyakrabban a fenti kontextusban, különböző országok megbetegedési és halálozási mutatóinak összevetése kapcsán jön elő, valójában egy teljesen általános megoldási lehetősége a confoundingnak. Térjünk vissza az eredeti példánkra! A probléma, ilyen szemmel ránézve, hogy bár mindkét csoportban ugyanúgy 6 és 1% a megbetegedési arány mindkét rétegekben, a 6 és 1%-ot nagyon eltérő súlyokkal kombináljuk össze: a légszennyezett területen élő csoport esetében a kevésbé tehetősek 6%-os értéke 55% súlyt kap, a tehetősebbek 1%-os száma pedig 45%-ot (ellenőrizzük le: <span class="math inline">\(0,55 \cdot 6 + 0,45 \cdot 1 = 3,8\%\)</span>), addig a nem légszennyezett területen felnövő csoport esetében a 6% mindössze 6,25% súlyt kap (itt kevésbé tehetős lakosság él – ugye épp ez volt az egyik oka a confoundingnak), az 1% viszont 93,75%-ot (<span class="math inline">\(0,0625 \cdot 6 + 0,9375 \cdot 1 = 1,3\%\)</span>). A probléma tehát itt is az, hogy nagyon más „korfával” (szocioökonómiai helyzet-fával) kombináljuk össze az egyes rétegek értékeit. Hogy egy, de immár korrekt számba sűrítsük a probléma megoldását, egészítsük ki a rétegzést standardizálással! Ahelyett, hogy különböző súlyokat használunk, válasszunk egy közöset, legyen ez a Nagy és Alapos Standard IPM módra (röviden: NASI). A NASI-ban a rossz szocioökonómiai csoport aránya legyen 30%, a jóé 70%. Ha ezek után kiszámoljuk a mentális betegségek előfordulását mindkét csoportban, de immár egységesen a NASI-t használva, akkor a légszennyezett területen felnövő csoportra <span class="math inline">\(0,3 \cdot 6 + 0,7 \cdot 1 = 2,5\%\)</span>-t, a nem légszennyezettre <span class="math inline">\(0,3 \cdot 6 + 0,7 \cdot 1 = 2,5\%\)</span>-ot kapunk. Ezek lesznek a standardizált mentális megbetegedési ráták a két területen – ezekből már jól látszik, hogy <em>valójában</em> nincs különbség! A 3,8%-os és 1,3%-os (nyers) ráták közti különbség teljes egészében a szocioökonómiai helyzeten keresztül megvalósuló confoundingból jött, a légszennyezésnek nincs valóságos hatása a gyermekek mentális megbetegedéseire.</p>
+<p>Összefoglalva: a standardizálás legalább azt az egy problémáját megoldja a rétegzésnek, hogy áttekinthetetlen, mert nem egy, hanem sok eredményt ad – azon az áron, hogy adott esetben az így kapott eredmény a standard megválasztásától is függeni fog.</p>
+</section>
+<section id="kitérő-arról-hogy-miért-jó-ha-egy-országban-sokan-halnak-meg-rákban" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="kitérő-arról-hogy-miért-jó-ha-egy-országban-sokan-halnak-meg-rákban"><span class="header-section-number">4.3</span> Kitérő arról, hogy miért jó, ha egy országban sokan halnak meg rákban</h2>
+<p>Ezen a ponton érdemes kitérni pár kérdésre, melyek ugyan nem kapcsolódnak a szorosan vett témánkhoz, de nagyon logikusan következnek a fentiekből, és meglehetősen tanulságosak – nem is feltétlenül (tisztán) orvosilag.</p>
+<p>Az első, hogy a betegségek nyers előfordulási rátája, különösen, ha hosszú időtávot nézünk, vagy nagyon különböző országokat hasonlítunk össze, általában nem túl értelmes mutató. Ezt a fentiekben láttuk, ám érdemes jobban is belegondolni, hogy a végiggondolatlan használata milyen – akár első ránézésre teljesen paradox – helyzetekhez vezethet. Az egyik legjobb példa erre: miért kell néha örülni annak, ha egy országban sokan halnak meg rákban?</p>
+<p>Az előbbieket átgondolva adódik a válasz: minden olyan betegség esetén, melynek a kockázata nő az életkor növekedtével (ez számos ráktípusra igaz), a növekvő előfordulásnak nem csak az lehet az oka, hogy romlik a népegészségügyi helyzet, hanem az is, ha tovább élnek a lakosok! Szváziföldön például szinte ismeretlen a rákos halálozás, de ennek annyira valószínűleg nem örülnek, ugyanis a fő oka nem a remek szváziföldi onkológiai helyzet, hanem egész egyszerűen az a tény, hogy az AIDS viszi el a lakosok majdnem kétharmadát, többségüket borzasztó fiatalon. (A szülőnők majdnem fele HIV-fertőzött, a válság legsúlyosabb pontján, a 2000-es évek elején a születéskor várható élettartam 45 év alá esett, majdnem 10%-os csecsemőhalandósággal.) Azaz: egyszerűen nem élnek addig az emberek, hogy elkezdjenek rákosak lenni! Hiszen az, vagy legalábbis számos fajtája, idősebb korban jelent igazán kockázatot. A szváziföldi népegészségügy roppant boldog lesz, ha majd azt látja, hogy egyre többen halnak meg rákban – ez ugyanis azt jelenti, hogy sikerült megfékezni a HIV/AIDS-járványt.</p>
+<p>A másik dolog, aminek pontosan emiatt nincs túl sok értelme (önmagában) az a haláloki összetétel. Ez alatt azt értik, hogy az elhunytak mekkora hányada halt meg rákban, szívinfarktusban stb., a közbeszédben gyakran hangzanak el olyan kijelentések, hogy „Úristen, a helyzet drámai, a magyar lakosok 25%-a rákban hal meg!”.</p>
+<p>Na és? Én személy szerint nagyon örülnék neki, ha a magyar lakosság 100%-a rákban halna meg – feltéve, hogy ezt 130 éves korukban teszik!</p>
+<p>A probléma tehát ma Magyarországon nem az, hogy <em>túl sokan</em> halnak meg rákban, hanem az, hogy <em>túl korán</em> halnak meg rákban!</p>
+<p>Eleve, a „túl sok” jelzőnek, és ebből adódóan az ilyen politikusi „az a célunk, hogy kevesebben haljanak meg rákban Magyarországon!” jelszavaknak túl sok értelmük nincs: magától értetődően, ha kevesebben halnak meg rákban, akkor <em>automatikusan</em>, szükségképp <em>többen</em> halnak meg infarktusban, agyér-betegségben és egyéb halálokokban… (Mindaddig legalábbis, amíg nem sikerül megoldani azt a jelenleg kissé bonyolultnak tűnő orvosi problémát, hogy <em>valamiben</em> mindenki meghal előbb-utóbb.) Ha valaki azt mondja, hogy „az a célunk, hogy minél kevesebben haljanak meg rákban Magyarországon!” az <em>tökéletesen egyenértékű</em> azzal, mintha azt mondaná, hogy „az a célunk, hogy minél többen haljanak meg nem rákban Magyarországon!”… A valódi cél tehát nem az, hogy <em>kevesebben</em> haljanak meg, hanem az, hogy <em>később</em> haljanak meg az emberek (kivéve persze, ha valakinek speciális preferenciája van, ami miatt egy bizonyos halálokban jobban vagy kevésbé jobban szeretne meghalni, mint a többiben).</p>
+<p>Ez elvezet minket egy mutatóhoz, ami a „sokan halnak meg rákban” szintű közbeszédben kevés helyet kap, ami azért különösen sajnálatos, mert valójában egyáltalán nem bonyolult módon ragadja meg a fenti problémát. Ez nem más mint az elvesztett potenciális életévek (általánosan használt angol rövidítéssel: YLL) fogalma. A YLL számítása tulajdonképpen pofonegyszerű: kijelölünk egy életkort, ez tipikusan 70 év, és minden egyes halálozásnál megnézzük, hogy az elhunyt mennyivel korábban halt meg – ez lesz az elvesztett potenciális életévek száma az ő esetében. Egy csecsemőhalálozásnál ez tehát 70 év, ha valaki 60 évesen hal meg, akkor 10, ha 70 évesen, akkor 0, ha 71 évesen (vagy bármikor később), akkor ugyanúgy 0. Ha ezt összeadjuk az összes adott országban adott évben elhunytra, akkor megkapjuk, hogy ott mennyi volt a teljes potenciális életév-veszteség. Ezt tipikusan 100 ezer lakosra leosztva szokás közölni, Magyarországon 2016-ban az OECD adatai szerint 4806 év/100 ezer fő volt. Ez első ránézésre meglehetősen abszurd mutató („akkor az nem is számít, ha 70 éves korom után halok meg?!” – kérdezhetné valaki), ám második ránézésre már látható, hogy valami nagyon fontosat mutat meg. Megtehetjük ugyanis, hogy az elvesztett potenciális életéveket is kiszámoljuk halálokonként, és ez olyat fog felfedni, amit az egyszerű haláloki összetétel elfedett: azt, hogy melyik halálok öli <em>korán</em> a lakosokat! Magyarországon például a KSH utolsó, 2007-es elemzése szerint a daganatos megbetegedések felelnek a nagy betegségcsoportok közül a legnagyobb potenciális életév-veszteségért, miközben a halálokok között csak másodikak a szív-érrendszeri halálozások mögött. Még érdekesebb (de ha végiggondoljuk, teljesen logikus!), hogy a szándékos önártalom a halálokok között 2%-ot sem ér el, de potenciális életév-veszteségben még az egyébként halálozások 10%-áért felelős agyérbetegségeket is megelőzi! Hogy ez miért fontos? Azért, mert segít végiggondolni, hogy az egészségügy – mindig szűkös – erőforrásait hová érdemes csoportosítani: egyáltalán nem biztos, hogy arra racionális, amiben sokan halnak meg!</p>
+<p>A kérdésnek persze a valóságban számos, nem könnyen megválaszolható további problémája is van (megelőzhetőség figyelembevétele, költségek figyelembevétele, nem halálos, de életminőséget rontó állapotok figyelembevétele, a különböző életkori halálozások súlyozása stb.), de itt most a cél az alapelgondolás bemutatása volt.</p>
+<p>Láttuk tehát, hogy kísérletes adatokból hogyan tudunk okozati viszonyokra következtetni (randomizálással), és most már azt is láttuk, hogy hogyan tudjuk ugyanezt megtenni megfigyeléses adatokkal is. A problémáknak azonban még nem értünk a végére! Van egy kérdés, amiről még egyáltalán nem beszéltünk: hogyan vesszük figyelembe a véletlen ingadozás hatását?</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kimásolva!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kimásolva!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/ferenci-tamas\.github\.io\/orvosi-megismeres-modszertana");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./megfigyeles-kiserlet.html" class="pagination-link" aria-label="A confounding megoldásai -- megfigyelés és kísérlet">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">A confounding megoldásai – megfigyelés és kísérlet</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./veletlen-ingadozas.html" class="pagination-link" aria-label="A véletlen szerepe az orvosi vizsgálatok kiértékelésében">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">A véletlen szerepe az orvosi vizsgálatok kiértékelésében</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ferenci-tamas/orvosi-megismeres-modszertana/edit/main/megfigyeleses-vizsgalatok.qmd" class="toc-action"><i class="bi bi-github"></i>Az oldal szerkesztése</a></li><li><a href="https://github.com/ferenci-tamas/orvosi-megismeres-modszertana/blob/main/megfigyeleses-vizsgalatok.qmd" class="toc-action"><i class="bi empty"></i>Forráskód megtekintése</a></li><li><a href="https://github.com/ferenci-tamas/orvosi-megismeres-modszertana/issues/new" class="toc-action"><i class="bi empty"></i>Észrevétel jelzése</a></li></ul></div></div></div></footer><script type="text/javascript">
+var sc_project=12422840; 
+var sc_invisible=1; 
+var sc_security="d32cce24"; 
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async=""></script>
+<noscript><div class="statcounter"><a title="ingyenes
+webstatisztika" href="https://www.statcounter.hu/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12422840/0/d32cce24/1/" alt="ingyenes webstatisztika" referrerpolicy="no-referrer-when-downgrade"></a></div></noscript>
+
+
+
+
+</body></html>

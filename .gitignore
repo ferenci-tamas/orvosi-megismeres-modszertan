@@ -37,8 +37,4 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
-
-# Sajat
-*.aux
-*.toc
-_bookdown_files
+/.quarto/

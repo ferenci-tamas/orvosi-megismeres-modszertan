@@ -1,175 +1,264 @@
 <!DOCTYPE html>
-<html lang="hu-HU" xml:lang="hu-HU">
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="hu-HU" xml:lang="hu-HU"><head>
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)</title>
-  <meta name="description" content="Mind érdeklődőknek, mind orvosoknak hasznos összefoglaló, mely közérthetően bemutatja az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
 
-  <meta property="og:title" content="Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)" />
-  <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://tamas-ferenci.github.io/FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese/" />
-  
-  <meta property="og:description" content="Mind érdeklődőknek, mind orvosoknak hasznos összefoglaló, mely közérthetően bemutatja az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni." />
-  <meta name="github-repo" content="tamas-ferenci/FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)" />
-  
-  <meta name="twitter:description" content="Mind érdeklődőknek, mind orvosoknak hasznos összefoglaló, mely közérthetően bemutatja az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni." />
-  
+<meta name="author" content="Ferenci Tamás">
+<meta name="description" content="Mind érdeklődőknek, mind orvosoknak, egészségügyi szakdolgozóknak szóló összefoglaló, mely igyekszik közérthetően bemutatni az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni.">
 
-<meta name="author" content="Ferenci Tamás, tamas.ferenci@medstat.hu" />
-
-
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  
-  
-
-<link rel="next" href="bevezető-gondolatok-és-pár-történeti-szempont.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
-<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
-<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+<title>Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
 
 
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./bevezetes.html" rel="next">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-364982630eef5352dd1537128a8ed5cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nincs találat",
+    "search-matching-documents-text": "találat",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "További találatok elrejtése",
+    "search-more-match-text": "további találat ebben a dokumentumban",
+    "search-more-matches-text": "további találat ebben a dokumentumban",
+    "search-clear-button-title": "Törlés",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Mégse",
+    "search-submit-button-title": "Keresés",
+    "search-label": "Keresés"
+  }
+}</script>
 
 
-
-
-
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19799395-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-19799395-2');
-</script>
-
-
-
-
-<link rel="stylesheet" href="style.css" type="text/css" />
+<meta property="og:title" content="Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)">
+<meta property="og:description" content="Mind érdeklődőknek, mind orvosoknak, egészségügyi szakdolgozóknak szóló összefoglaló, mely igyekszik közérthetően bemutatni az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni.">
+<meta property="og:image" content="https://ferenci-tamas.github.io/orvosi-megismeres-modszertana/orvosi-megismeres-modszertana-cover.jpg">
+<meta property="og:site_name" content="Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)">
+<meta property="og:image:alt" content="Érvágás illusztrációja középkori kódexben">
+<meta name="twitter:title" content="Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)">
+<meta name="twitter:description" content="Mind érdeklődőknek, mind orvosoknak, egészségügyi szakdolgozóknak szóló összefoglaló, mely igyekszik közérthetően bemutatni az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni.">
+<meta name="twitter:image" content="https://ferenci-tamas.github.io/orvosi-megismeres-modszertana/orvosi-megismeres-modszertana-cover.jpg">
+<meta name="twitter:image:alt" content="Érvágás illusztrációja középkori kódexben">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body>
+<body class="nav-sidebar floating quarto-light">
 
-
-
-  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
-
-    <div class="book-summary">
-      <nav role="navigation">
-
-<ul class="summary">
-<li><a href="./">Ferenci Tamás: Az orvosi megismerés<br>módszertana</a></li>
-
-<li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Előszó</a></li>
-<li class="chapter" data-level="1" data-path="bevezető-gondolatok-és-pár-történeti-szempont.html"><a href="bevezető-gondolatok-és-pár-történeti-szempont.html"><i class="fa fa-check"></i><b>1</b> Bevezető gondolatok, és pár történeti szempont</a>
-<ul>
-<li class="chapter" data-level="1.1" data-path="bevezető-gondolatok-és-pár-történeti-szempont.html"><a href="bevezető-gondolatok-és-pár-történeti-szempont.html#az-érvágás-esete-avagy-hogyan-lehet-valamit-2000-éven-át-rosszul-csinálni-úgy-hogy-senkinek-nem-tűnik-fel"><i class="fa fa-check"></i><b>1.1</b> Az érvágás esete, avagy hogyan lehet valamit 2000 éven át rosszul csinálni úgy, hogy senkinek nem tűnik fel</a></li>
-<li class="chapter" data-level="1.2" data-path="bevezető-gondolatok-és-pár-történeti-szempont.html"><a href="bevezető-gondolatok-és-pár-történeti-szempont.html#empirikus-megismerés-az-orvostörténetben"><i class="fa fa-check"></i><b>1.2</b> Empirikus megismerés az orvostörténetben</a></li>
-<li class="chapter" data-level="1.3" data-path="bevezető-gondolatok-és-pár-történeti-szempont.html"><a href="bevezető-gondolatok-és-pár-történeti-szempont.html#vita-egy-állásponttal"><i class="fa fa-check"></i><b>1.3</b> Vita egy állásponttal</a></li>
-</ul></li>
-<li class="chapter" data-level="2" data-path="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><i class="fa fa-check"></i><b>2</b> Az empirikus megismerés alapgondolata és a confounding</a>
-<ul>
-<li class="chapter" data-level="2.1" data-path="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html#az-okozatiság-nyomában"><i class="fa fa-check"></i><b>2.1</b> Az okozatiság nyomában</a></li>
-<li class="chapter" data-level="2.2" data-path="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html#a-confounding-problémája"><i class="fa fa-check"></i><b>2.2</b> A confounding problémája</a></li>
-<li class="chapter" data-level="2.3" data-path="az-empirikus-megismerés-alapgondolata-és-a-confounding.html"><a href="az-empirikus-megismerés-alapgondolata-és-a-confounding.html#zavaró-változóktól-a-megzavart-olvasókig"><i class="fa fa-check"></i><b>2.3</b> Zavaró változóktól a megzavart olvasókig</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><i class="fa fa-check"></i><b>3</b> A confounding megoldásai – megfigyelés és kísérlet</a>
-<ul>
-<li class="chapter" data-level="3.1" data-path="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html#egy-aranyérmes-megoldás"><i class="fa fa-check"></i><b>3.1</b> Egy aranyérmes megoldás</a></li>
-<li class="chapter" data-level="3.2" data-path="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html#megfigyelés-és-kísérlet"><i class="fa fa-check"></i><b>3.2</b> Megfigyelés és kísérlet</a></li>
-<li class="chapter" data-level="3.3" data-path="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html#a-jó-a-rossz-és-a-közepesnél-némileg-gyengébben-jó"><i class="fa fa-check"></i><b>3.3</b> A jó, a rossz, és a közepesnél némileg gyengébben jó</a></li>
-<li class="chapter" data-level="3.4" data-path="a-confounding-megoldásai-megfigyelés-és-kísérlet.html"><a href="a-confounding-megoldásai-megfigyelés-és-kísérlet.html#jót-tesz-e-repülőgépből-való-kiesésnél-ha-van-nálunk-ejtőernyő"><i class="fa fa-check"></i><b>3.4</b> Jót tesz-e repülőgépből való kiesésnél, ha van nálunk ejtőernyő?</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="megfigyeléses-vizsgálatok-a-gyakorlatban.html"><a href="megfigyeléses-vizsgálatok-a-gyakorlatban.html"><i class="fa fa-check"></i><b>4</b> Megfigyeléses vizsgálatok a gyakorlatban</a>
-<ul>
-<li class="chapter" data-level="4.1" data-path="megfigyeléses-vizsgálatok-a-gyakorlatban.html"><a href="megfigyeléses-vizsgálatok-a-gyakorlatban.html#a-rétegzés"><i class="fa fa-check"></i><b>4.1</b> A rétegzés</a></li>
-<li class="chapter" data-level="4.2" data-path="megfigyeléses-vizsgálatok-a-gyakorlatban.html"><a href="megfigyeléses-vizsgálatok-a-gyakorlatban.html#a-standardizálás"><i class="fa fa-check"></i><b>4.2</b> A standardizálás</a></li>
-<li class="chapter" data-level="4.3" data-path="megfigyeléses-vizsgálatok-a-gyakorlatban.html"><a href="megfigyeléses-vizsgálatok-a-gyakorlatban.html#kitérő-arról-hogy-miért-jó-ha-egy-országban-sokan-halnak-meg-rákban"><i class="fa fa-check"></i><b>4.3</b> Kitérő arról, hogy miért jó, ha egy országban sokan halnak meg rákban</a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><i class="fa fa-check"></i><b>5</b> A véletlen szerepe az orvosi vizsgálatok kiértékelésében</a>
-<ul>
-<li class="chapter" data-level="5.1" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#a-véletlen-ingadozás-átka"><i class="fa fa-check"></i><b>5.1</b> A véletlen ingadozás átka</a></li>
-<li class="chapter" data-level="5.2" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#isten-létének-bizonyítása-a-statisztika-eszközeivel"><i class="fa fa-check"></i><b>5.2</b> Isten létének bizonyítása a statisztika eszközeivel</a></li>
-<li class="chapter" data-level="5.3" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#a-mágikus-p-érték"><i class="fa fa-check"></i><b>5.3</b> A mágikus <em>p</em>-érték</a></li>
-<li class="chapter" data-level="5.4" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#döntéshozatal-véletlen-jelenlétében"><i class="fa fa-check"></i><b>5.4</b> Döntéshozatal véletlen jelenlétében</a></li>
-<li class="chapter" data-level="5.5" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#az-egyik-legfontosabb-félreértés"><i class="fa fa-check"></i><b>5.5</b> Az egyik legfontosabb félreértés</a>
-<ul>
-<li class="chapter" data-level="5.5.1" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#terroristák-a-városban"><i class="fa fa-check"></i><b>5.5.1</b> Terroristák a városban</a></li>
-<li class="chapter" data-level="5.5.2" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#kis-kitérő-na-de-mi-köze-ennek-az-orvosláshoz"><i class="fa fa-check"></i><b>5.5.2</b> Kis kitérő: na de mi köze ennek az orvosláshoz?</a></li>
-<li class="chapter" data-level="5.5.3" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#nagy-kitérő-dr.-gépbayes-rendel"><i class="fa fa-check"></i><b>5.5.3</b> Nagy kitérő: Dr. GépBayes rendel</a></li>
-<li class="chapter" data-level="5.5.4" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#na-de-mi-köze-ennek-a-véletlen-ingadozás-kezeléséhez"><i class="fa fa-check"></i><b>5.5.4</b> Na de mi köze ennek a véletlen ingadozás kezeléséhez?</a></li>
-</ul></li>
-<li class="chapter" data-level="5.6" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#a-véletlenség-megszelídítése"><i class="fa fa-check"></i><b>5.6</b> A véletlenség megszelídítése</a>
-<ul>
-<li class="chapter" data-level="5.6.1" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#megoldási-lehetőségek-nyomásban"><i class="fa fa-check"></i><b>5.6.1</b> Megoldási lehetőségek nyomásban</a></li>
-<li class="chapter" data-level="5.6.2" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#az-orvosi-kutatások-edzeni-mennek"><i class="fa fa-check"></i><b>5.6.2</b> Az orvosi kutatások edzeni mennek</a></li>
-<li class="chapter" data-level="5.6.3" data-path="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html"><a href="a-véletlen-szerepe-az-orvosi-vizsgálatok-kiértékelésében.html#kutatások-mintaméretének-tervezése"><i class="fa fa-check"></i><b>5.6.3</b> Kutatások mintaméretének tervezése</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html"><i class="fa fa-check"></i><b>6</b> Végpont és lemérése</a>
-<ul>
-<li class="chapter" data-level="6.1" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#mikor-adjunk-gyógyszert"><i class="fa fa-check"></i><b>6.1</b> Mikor adjunk gyógyszert?</a></li>
-<li class="chapter" data-level="6.2" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#kísérletek-résztvevői-avagy-végre-kiderül-hogy-jót-tesz-e-repülőgépből-kiesésnél-ha-van-nálunk-ejtőernyő"><i class="fa fa-check"></i><b>6.2</b> Kísérletek résztvevői, avagy végre kiderül, hogy jót tesz-e repülőgépből kiesésnél, ha van nálunk ejtőernyő</a></li>
-<li class="chapter" data-level="6.3" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#mutatók-stabilitása"><i class="fa fa-check"></i><b>6.3</b> Mutatók stabilitása</a></li>
-<li class="chapter" data-level="6.4" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#döntéshozatal-és-az-abszolút-és-relatív-mutatók"><i class="fa fa-check"></i><b>6.4</b> Döntéshozatal és az abszolút és relatív mutatók</a></li>
-<li class="chapter" data-level="6.5" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#különböző-kimenetek-közös-nevezőre-hozása"><i class="fa fa-check"></i><b>6.5</b> Különböző kimenetek közös nevezőre hozása</a></li>
-<li class="chapter" data-level="6.6" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#kitérő-patikamérlegen-az-emberélet"><i class="fa fa-check"></i><b>6.6</b> Kitérő: patikamérlegen az emberélet</a></li>
-<li class="chapter" data-level="6.7" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#végpontok-megválasztásának-problémái"><i class="fa fa-check"></i><b>6.7</b> Végpontok megválasztásának problémái</a></li>
-<li class="chapter" data-level="6.8" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#több-végpont-egyidejű-vizsgálata"><i class="fa fa-check"></i><b>6.8</b> Több végpont egyidejű vizsgálata</a>
-<ul>
-<li class="chapter" data-level="6.8.1" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#vadászni-mentünk-szignifikanciára"><i class="fa fa-check"></i><b>6.8.1</b> Vadászni mentünk… szignifikanciára</a></li>
-<li class="chapter" data-level="6.8.2" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#egy-nem-csak-biostatisztikai-tanulságokkal-bíró-kitérő"><i class="fa fa-check"></i><b>6.8.2</b> Egy nem csak biostatisztikai tanulságokkal bíró kitérő</a></li>
-<li class="chapter" data-level="6.8.3" data-path="végpont-és-lemérése.html"><a href="végpont-és-lemérése.html#a-jóhiszemű-kutatók-nehézségei"><i class="fa fa-check"></i><b>6.8.3</b> A jóhiszemű kutatók nehézségei</a></li>
-</ul></li>
-</ul></li>
-<li class="divider"></li>
-<li><a href="http://www.medstat.hu/" target="blank">http://www.medstat.hu/</a></li>
-
-</ul>
-
-      </nav>
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Előszó</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Keresés" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
     </div>
-
-    <div class="book-body">
-      <div class="body-inner">
-        <div class="book-header" role="navigation">
-          <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)</a>
-          </h1>
-        </div>
-
-        <div class="page-wrapper" tabindex="-1" role="main">
-          <div class="page-inner">
-
-            <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)</h1>
-<p class="author"><em>Ferenci Tamás, <a href="mailto:tamas.ferenci@medstat.hu" class="email">tamas.ferenci@medstat.hu</a></em></p>
-<p class="date"><em>2021. november 4.</em></p>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ferenci-tamas/orvosi-megismeres-modszertana" title="Forráskód" class="quarto-navigation-tool px-1" aria-label="Forráskód"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Letöltés" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Letöltés"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./ferenci-tamas-orvosi-megismeres-modszertana.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Letöltés PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./ferenci-tamas-orvosi-megismeres-modszertana.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Letöltés ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Megosztás" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Megosztás"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
 </div>
-<div id="előszó" class="section level1 unnumbered">
-<h1>Előszó</h1>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Keresés"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Előszó</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bevezetes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Bevezető gondolatok, és pár történeti szempont</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./alapok-confounding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Az empirikus megismerés alapgondolata és a confounding</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./megfigyeles-kiserlet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">A confounding megoldásai – megfigyelés és kísérlet</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./megfigyeleses-vizsgalatok.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Megfigyeléses vizsgálatok a gyakorlatban</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./veletlen-ingadozas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">A véletlen szerepe az orvosi vizsgálatok kiértékelésében</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vegpont.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Végpont és lemérése</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tartalomjegyzék</h2>
+   
+  <ul>
+  <li><a href="#előszó" id="toc-előszó" class="nav-link active" data-scroll-target="#előszó">Előszó</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ferenci-tamas/orvosi-megismeres-modszertana/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Az oldal szerkesztése</a></li><li><a href="https://github.com/ferenci-tamas/orvosi-megismeres-modszertana/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>Forráskód megtekintése</a></li><li><a href="https://github.com/ferenci-tamas/orvosi-megismeres-modszertana/issues/new" class="toc-action"><i class="bi empty"></i>Észrevétel jelzése</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)</h1>
+</div>
+
+<div>
+  <div class="description">
+    Mind érdeklődőknek, mind orvosoknak, egészségügyi szakdolgozóknak szóló összefoglaló, mely igyekszik közérthetően bemutatni az empirikus orvosi kutatások módszertani alapjait, hangsúlyosan kitérve a félreértésekre és félrevezetésekre is, hogy ez alapján könnyebb legyen az ilyen vizsgálatokat értelmezni, értékelni és kritikusan értékelni.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Szerző</div>
+    <div class="quarto-title-meta-contents">
+             <p><a href="https://www.medstat.hu/">Ferenci Tamás</a> <a href="mailto:tamas.ferenci@medstat.hu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Közzétéve</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2025. július 9.</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+
+<section id="előszó" class="level1 unnumbered">
+<h1 class="unnumbered">Előszó</h1><p><img src="orvosi-megismeres-modszertana-cover.jpg" title="Az orvosi megismerés módszertana (és az orvosi kutatások kritikus értékelése)" class="quarto-cover-image nolightbox img-fluid" alt="Érvágás illusztrációja középkori kódexben"></p>
 <p>Manapság mind az érdeklődő laikusokra, mind az orvosokra, szakdolgozókra csak úgy zúdulnak a különféle egészségügyi, orvosi információk, melyeket a helyükön kell(ene) kezelni. Tényleg csökkenti-e a vérnyomást ez a vérnyomás-csökkentő gyógyszerjelölt? Okozhat-e agyvérzést mint mellékhatás? A vöröshús-fogyasztás valóban növeli a rákkockázatot? A császármetszéssel születés vezethet 1-es típusú cukorbetegséghez? Ahhoz, hogy értsük, hogy e kérdéseket hogyan lehet empirikusan megválaszolni, és ahhoz, hogy az ilyeneket megválaszoló kutatásokat értelmezni, értékelni és kritikusan értékelni tudjuk, az empirikus kutatások módszertani alapjait kell ismerni. Ez már ma is fontos, és napról-napra csak egyre fontosabb lesz, mégpedig nem csak minden orvos és egészségügyis, de minden, a sajtóban olvasottakat valóban megérteni vágyó érdeklődő számára.</p>
 <p>(Tapasztalataim szerint ez az orvosoknak sem könnyű: az „evidence-based medicine” varázsszóként terjedése ellenére számos orvos valójában nem rendelkezik kellő jártassággal e téren. Nem az ő hibájukból: az egyetemi biostatisztika oktatás inkább arra készít fel, hogy hogyan kell számokat gyártani, nem arra, hogy a mások által gyártott számokat hogyan kell értelmezni, értékelni.)</p>
 <p>A fenti motivációból fakadóan szívügyem e témakör bemutatása. Nem, ez nem „biostatisztika”, legalábbis abban az értelemben, amit a legtöbb orvos ért ez alatt, nem képletek, levezetések és bizonyítások lesznek ebben a jegyzetben. Ha már mindenképp címkéznünk kell, akkor módszertan. Ahogy írtam is, ennek ismerete – szemben a biostatisztikával – véleményem szerint kivétel nélkül minden orvosnak, egészségügyi területen dolgozónak és minden érdeklődő laikusnak fontos, aki orvosi kutatások eredményeit olvassa és akarja megérteni; ehhez próbálok segítséget nyújtani e jegyzettel. A nyelvezete, felépítése olyan, hogy reményeim szerint minden különösebb előismeret, és orvosi tudás nélkül is végig követhető.</p>
@@ -179,97 +268,429 @@
 <p>Ez a jegyzet az Interpress Magazinban megjelent cikksorozatom kibővített, szerkesztett változata.</p>
 <p>A dolgozathoz adott segítségükért szeretnék köszönetet mondani (alfabetikus sorrendben) Szilágyi Eszter Szabinának és Tóth Andrásnak.</p>
 
-</div>
-<!-- Default Statcounter code for Ferenci Tamás
-elektronikus jegy https://tamas-ferenci.github.io/ -->
-<script type="text/javascript">
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kimásolva!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kimásolva!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/ferenci-tamas\.github\.io\/orvosi-megismeres-modszertana");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./bevezetes.html" class="pagination-link" aria-label="Bevezető gondolatok, és pár történeti szempont">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Bevezető gondolatok, és pár történeti szempont</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ferenci-tamas/orvosi-megismeres-modszertana/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Az oldal szerkesztése</a></li><li><a href="https://github.com/ferenci-tamas/orvosi-megismeres-modszertana/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>Forráskód megtekintése</a></li><li><a href="https://github.com/ferenci-tamas/orvosi-megismeres-modszertana/issues/new" class="toc-action"><i class="bi empty"></i>Észrevétel jelzése</a></li></ul></div></div></div></footer><script type="text/javascript">
 var sc_project=12422840; 
 var sc_invisible=1; 
 var sc_security="d32cce24"; 
 </script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="látogató
-számláló" href="https://www.statcounter.hu/"
-target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/12422840/0/d32cce24/1/"
-alt="látogató számláló"></a></div></noscript>
-<!-- End of Statcounter Code -->
-            </section>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async=""></script>
+<noscript><div class="statcounter"><a title="ingyenes
+webstatisztika" href="https://www.statcounter.hu/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12422840/0/d32cce24/1/" alt="ingyenes webstatisztika" referrerpolicy="no-referrer-when-downgrade"></a></div></noscript>
 
-          </div>
-        </div>
-      </div>
 
-<a href="bevezető-gondolatok-és-pár-történeti-szempont.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
-    </div>
-  </div>
-<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
-<script>
-gitbook.require(["gitbook"], function(gitbook) {
-gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": "https://github.com/tamas-ferenci/FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese/edit/master/index.Rmd",
-"text": "Szerkesztés"
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": ["FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese.pdf", "FerenciTamas_AzOrvosiMegismeresModszertanaEsAzOrvosiKutatasokKritikusErtekelese.epub"],
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
-});
-});
-</script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-</body>
 
-</html>
+</body></html>
