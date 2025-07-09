@@ -1,1 +1,1 @@
-Sitemap: https://ferenci-tamas.github.io/orvosi-megismeres-modszertana/sitemap.xml
+Sitemap: https://ferenci-tamas.github.io/orvosi-megismeres-modszertan/sitemap.xml
